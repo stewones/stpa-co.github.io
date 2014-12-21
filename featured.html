@@ -9,7 +9,7 @@ description: "Arquivo dos Featured posts"
 <ul class="post-list">
 {% for post in site.posts %}
   {% if post.featured %}
-    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}{% if post.subtitle %} (<div class="subtitle">{{ post.subtitle }}</div>){% endif %}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%d %b, %Y"}}</time></a></li>
+    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}{% if post.subtitle %} (<div class="subtitle">{{ post.subtitle }}</div>){% endif %}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%d %b, %Y" | replace:'Jan','Jan' | replace:'Feb','Fev' | replace:'Mar','Mar' | replace:'Apr','Abr' | replace:'May','Mai' | replace:'Jun','Jun' | replace:'Jul','Jul' | replace:'Aug','Ago' | replace:'Sep','Set' | replace:'Oct','Out' | replace:'Nov','Nov' | replace:'Dec','Dez' }}</time></a></li>
   {% endif %}
 {% endfor %}
 </ul>

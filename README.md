@@ -1,7 +1,6 @@
-# Meditator
+# stpa.co
 
-This is a Jekyll blog/site skeleton. A demo is live at [meditator.stpa.co](https://meditator.stpa.co).
-The theme used is a version based on [mediator](https://github.com/dirkfabisch/mediator) by  [@dirkfabisch](https://twitter.com/dirkfabisch), which is free and awesome.
+This is a Jekyll blog/site built-in with [meditator](https://meditator.stpa.co), where I talk about programming. It's live at [stpa.co](https://stpa.co).
 
 # Install
 

@@ -8,6 +8,32 @@
 
     $(document).ready(function() {
 
+        Socialite.setup({
+            facebook: {
+                lang: 'pt_BR',
+                appId: 335840849938569,
+                onlike: function(url) { /* ... */ },
+                onunlike: function(url) { /* ... */ },
+                onsend: function(url) { /* ... */ }
+            },
+            twitter: {
+                lang: 'pt_BR',
+                onclick: function(e) { /* ... */ },
+                ontweet: function(e) { /* ... */ },
+                onretweet: function(e) { /* ... */ },
+                onfavorite: function(e) { /* ... */ },
+                onfollow: function(e) { /* ... */ }
+            },
+            googleplus: {
+                lang: 'pt-BR',
+                onstartinteraction: function(el, e) { /* ... */ },
+                onendinteraction: function(el, e) { /* ... */ },
+                callback: function(el, e) { /* ... */ }
+            }
+        });
+
+        Socialite.load();
+
         $(".post-content").fitVids();
 
         // Calculates Reading Time

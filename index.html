@@ -82,7 +82,7 @@ layout: default
                     {{ post.date | date: "%d" }}
                   </span>
                   <span class="month-year">
-                    {{ post.date | date: "%b %Y" }}
+                    {{ post.date | date: "%b %Y" | replace:'Jan','Jan' | replace:'Feb','Fev' | replace:'Mar','Mar' | replace:'Apr','Abr' | replace:'May','Mai' | replace:'Jun','Jun' | replace:'Jul','Jul' | replace:'Aug','Ago' | replace:'Sep','Set' | replace:'Oct','Out' | replace:'Nov','Nov' | replace:'Dec','Dez' }}
                   </span>
                 </time>
               <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->

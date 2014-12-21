@@ -17,12 +17,12 @@
             <div class="post-meta">
                 <h1 class="post-title">{{ page.title }}</h1>
                 <h2 class="post-subtitle">{{ page.subtitle }}</h2>
-        
+                {% include socialite.html %}
                 <div class="cf post-meta-text">
                     <div class="author-image" style="background-image: url({{ site.author_image }})"></div>
                     <h4 class="author-name">{{ site.author }}</h4>
                     em
-                    <time itemprop="datePublished" datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
+                    <time itemprop="datePublished" datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string | replace:'Jan','Jan' | replace:'Feb','Fev' | replace:'Mar','Mar' | replace:'Apr','Abr' | replace:'May','Mai' | replace:'Jun','Jun' | replace:'Jul','Jul' | replace:'Aug','Ago' | replace:'Sep','Set' | replace:'Oct','Out' | replace:'Nov','Nov' | replace:'Dec','Dez' }}</time>
                     <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->
                 </div>
                 <div style="text-align:center">
@@ -71,7 +71,7 @@
                     <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
                     <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author }}</h4>
                     em
-                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
+                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string | replace:'Jan','Jan' | replace:'Feb','Fev' | replace:'Mar','Mar' | replace:'Apr','Abr' | replace:'May','Mai' | replace:'Jun','Jun' | replace:'Jul','Jul' | replace:'Aug','Ago' | replace:'Sep','Set' | replace:'Oct','Out' | replace:'Nov','Nov' | replace:'Dec','Dez' }}</time>
                     <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->
                 </div>
             </div>
@@ -116,7 +116,7 @@
                     <h4 itemprop="name">{{ site.author }}</h4>
                     <p class="bio">{{site.author_bio}}</p>
                     <hr>
-                    <p class="published">Publicado em <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
+                    <p class="published">Publicado em <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string | replace:'Jan','Jan' | replace:'Feb','Fev' | replace:'Mar','Mar' | replace:'Apr','Abr' | replace:'May','Mai' | replace:'Jun','Jun' | replace:'Jul','Jul' | replace:'Aug','Ago' | replace:'Sep','Set' | replace:'Oct','Out' | replace:'Nov','Nov' | replace:'Dec','Dez' }}</time>
                     </p>
                     {% include sharer.html %}
                 </section>
@@ -142,6 +142,6 @@
         </div>
         </article>
         </main>
-        {% include bottom_closer.html %}
+        {% include bottom-closer.html %}
     </body>
 </html>

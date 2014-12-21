@@ -9,27 +9,28 @@ gems:
   - jekyll-sitemap
 
 # Site settings
-title: "My Blog"
+title: "Stewan Pacheco"
 description: > # this means to ignore newlines until "email:"
-  Things that came in my mind...
+   Programador poliglota. Trabalha atualmente em uma empresa StartUp do ramo de eventos, e no tempo livre se dedica a comunidade de desenvolvimento.
 
-email: my@email.co
+email: talk@stpa.co
 #blog logos
-logo: "/assets/images/stpa-symbol.png"
+logo: "https://graph.facebook.com/100002253653400/picture?width=115&height=115"
 logo_footer: "/assets/images/stpa-symbol.png"
 
 # blog cover
 cover: "/assets/images/cover.gif"
 
-name: 'Dil Maquinista'
-author: 'Dil Maquinista'
-author_image: "http://www.sinsuv.com.br/adm/imagens/dilma.jpg"
+name: 'Stewan P.'
+author: 'Stewan Pacheco'
+author_image: "https://graph.facebook.com/100002253653400/picture?width=115&height=115"
 author_bio: >
-   Presidenta do Brasil
+   FullStack web developer, open source believer
 
 paginate: 5
 
-url: "https://meditator.stpa.co" # the base hostname & protocol for your site
+#url: "http://127.0.0.1:4000"
+url: "https://stpa.co" # the base hostname & protocol for your site
 excerpt_separator: "<!-- more -->"
 
 comments: true
@@ -43,30 +44,30 @@ baseurl: ""
 
 # social icons and sharing options
 social:
-#  - icon:  twitter
-#    url: https://twitter.com/stewones
-#    desc: Follow me on Twitter
-#    share_url: http://twitter.com/share
-#    share_title: ?text=
-#    share_link: "&amp;url="
+  - icon:  twitter
+    url: https://twitter.com/stewones
+    desc: Follow me on Twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
 
-#  - icon: facebook
-#    url:  https://facebook.com/stewones
-#   desc: Connect me at Facebook
-#    share_url: //www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
+  - icon: facebook
+    url:  https://facebook.com/stewones
+    desc: Connect me at Facebook
+    share_url: //www.facebook.com/sharer.php
+    share_title: ?t=
+    share_link: "&amp;u="
 
   - icon: github
-    url:  https://github.com/stpa-co
+    url:  https://github.com/stewones
     desc: Fork me on GitHub
     share_url: 
     share_title:
     share_link:
 
-#  - icon:  google-plus
-#    url: https://plus.google.com/118319296239885590925/posts
-#    desc:  Add me on Google+
-#    share_url:
-#    share_title:
-#    share_link:
+  - icon:  google-plus
+    url: https://plus.google.com/118319296239885590925/posts
+    desc:  Add me on Google+
+    share_url:
+    share_title:
+    share_link:
