@@ -8,7 +8,7 @@ tags: [featured, github, jekyll, cloudflare]
 featured: true
 image: /assets/images_articles/sirva-seu-blog-com-github-pages-like-a-kyller/post-jekyll-e-github-pages-cloudflare.jpg
 comments: true
-description: Jekyll é um parser engine distribuído como um gem do Ruby. Ele é utilizado para gerar websites estáticos, através de componentes como templates, partials, liquid, markdown, entre outros.
+description: CloudFlare é uma plataforma como serviço (SAAS) que age como um proxy entre o visitante e o servidor, dando mais velocidade e segurança ao site.
 ---
 
 #O que é CloudFlare?
