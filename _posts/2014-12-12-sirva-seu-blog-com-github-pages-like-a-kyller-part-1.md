@@ -6,7 +6,7 @@ date:   2014-12-12
 categories: [github, jekyll]
 tags: [featured, github, jekyll]
 featured: true
-image: /assets/images_articles/2014-12-12-sirva-seu-blog-com-github-pages-like-a-kyller/post-jekyll-e-github-pages.jpg
+image: /assets/images_articles/sirva-seu-blog-com-github-pages-like-a-kyller/post-jekyll-e-github-pages.jpg
 comments: true
 description: Você pode hospedar seu(s) site(s) estático(s) no GitHub, de graça, sem limites, com domínio customizado, apenas configurando corretamente os repositórios em sua conta.
 ---
