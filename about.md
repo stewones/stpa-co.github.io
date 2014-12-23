@@ -41,6 +41,6 @@ Pretendo abordar os seguintes assuntos:
 
 
 Se você tem uma dúvida ou sugestão, entre em contato comigo pelo email [talk@stpa.co](mailto: talk@stpa.co).
-Este site é open-source, faça um fork no [GitHub](https://github.com/stpa-co/stpa-co.github.io), abra uma issue e envie seu PR (;
+Este site é open-source, faça um fork no [GitHub](https://github.com/stpa-co/meditator), abra uma issue e envie seu PR (;
 
 Entenda um pouco sobre as tecnologias que usei para o desenvolvimento [aqui](https://stpa.co/github/jekyll/2014/12/12/sirva-seu-blog-com-github-pages-like-a-kyller-part-1.html).
