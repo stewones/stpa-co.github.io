@@ -10,9 +10,9 @@ Ao longo destes anos, acabei escrevendo punhados de APIs, Interfaces, Módulos e
 
 Quando comecei a contribuir mais frequentemente para alguns grupos e repositórios, pude perceber o grande prazer que é transmitir conhecimento, analisar, observar e aprender com  os problemas de outras pessoas.
 
-Pensando em abordar profundamente os assuntos de minha área, resolvi criar este site/blog para ajudar e aprender cada vez mais com a comunidade de desenvolvimento.
+Pensando em abordar alguns assuntos de minha área, resolvi criar este site/blog para ajudar e aprender cada vez mais com a comunidade.
 
-Para começar, pretendo com este blog abordar os seguintes assuntos:
+Irei abordar os seguintes assuntos:
 
 - Frontend
 	- HTML/CSS
@@ -37,4 +37,6 @@ Para começar, pretendo com este blog abordar os seguintes assuntos:
 	- CodeIgniter
 	- Laravel
 
-- Este site é open-source, faça um fork no [GitHub](https://github.com/stpa-co/stpa-co.github.io). Entenda sobre o desenvolvimento [aqui](https://stpa.co/github/jekyll/2014/12/12/sirva-seu-blog-com-github-pages-like-a-kyller-part-1.html).
+
+Se você tem uma dúvida ou sugestão, entre em contato comigo pelo email [talk@stpa.co](mailto: talk@stpa.co).
+Este site é open-source, faça um fork no [GitHub](https://github.com/stpa-co/stpa-co.github.io). Entenda um pouco sobre o desenvolvimento [aqui](https://stpa.co/github/jekyll/2014/12/12/sirva-seu-blog-com-github-pages-like-a-kyller-part-1.html).

@@ -24,7 +24,7 @@ A cada commit enviado para a branch correta, o GitHub Pages irá servir seu cont
 
 O GitHub Pages trabalha em conjunto com um cara chamado Jekyll. Jekyll seria uma espécie de parser, que executa algumas tarefas com o propósito de te servir de maneira simples e rápida um site/blog pronto para produção. O resultado da junção dos dois é um pu*# site com alto desempenho, altamente escalado.
 
-A idéia é quando eu terminar de escrever este post, publicar a versão final em segundos, através de um simples commit <a href='https://github.com/stpa-co/meditator' target="_blank">para este repositório</a>. Interessante não?
+A idéia é quando eu terminar de escrever este post, publicar a versão final em segundos, através de um simples commit <a href='https://github.com/stpa-co/stpa-co.github.io' target="_blank">para este repositório</a>. Interessante não?
 
 Prós
 ----
