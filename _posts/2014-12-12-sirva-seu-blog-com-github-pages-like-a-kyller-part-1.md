@@ -54,5 +54,4 @@ Contras
 - Sem suporte SSL?
 	- Por padrão todos domínios *.github.io já suportam HTTPS. Para domínios customizados (como no meu caso), a solução que encontrei foi utlizar o SSL da CloudFlare, que inclusive achei a configuração bem simples e irei comentar na parte 3 deste post.
 	
-Confira a [parte 2](https://stpa.co/github/jekyll/2014/12/14/sirva-seu-blog-com-github-pages-like-a-kyller-part-2.html)
-	
+Continuação - [parte 2](https://stpa.co/github/jekyll/2014/12/14/sirva-seu-blog-com-github-pages-like-a-kyller-part-2.html) / [parte 3](https://stpa.co/github/jekyll/cloudflare/2014/12/22/sirva-seu-blog-com-github-pages-like-a-kyller-part-3.html)

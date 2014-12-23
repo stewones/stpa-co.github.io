@@ -53,7 +53,7 @@ Imagina que você consegue ter o melhor de todos os mundos e de graça. Você n�
 
 A vantagem de se usar Jekyll é devido o GitHub ser escrito em Ruby On Rails, portanto já trabalha nativamente com suas gem´s. Agora junta isso com o poder do CloudFlare e você tem um ambiente totalmente escalonado, pronto para produzir com zero downtime e muita facilidade de realizar atualizações on-the-fly, ao menos na parte do front-end. Agora sim você poderá dormir tranquilamente a noite =D
 
-Este blog é feito em Jekyll e utiliza um theme, open-source, disponível em [meditator.stpa.co](https://meditator.stpa.co).
+Este blog é feito em Jekyll e utiliza um theme, open-source disponível em [meditator.stpa.co](https://meditator.stpa.co).
 
 Enfim espero ter ajudado de alguma forma, deixe seu comentário.
 

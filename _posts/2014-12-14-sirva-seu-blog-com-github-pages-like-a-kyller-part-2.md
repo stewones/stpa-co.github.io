@@ -81,3 +81,5 @@ Saiba mais sobre a usabilidade do Jekyll [aqui](http://jekyllrb.com/docs/usage/)
 # Configurações do Jekyll
 
 Jekyll suporta algumas configurações, como descrito na documentação [aqui](http://jekyllrb.com/docs/configuration/)
+
+Continuação - [parte 1](https://stpa.co/github/jekyll/2014/12/12/sirva-seu-blog-com-github-pages-like-a-kyller-part-1.html) / [parte 3](https://stpa.co/github/jekyll/cloudflare/2014/12/22/sirva-seu-blog-com-github-pages-like-a-kyller-part-3.html)
