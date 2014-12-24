@@ -393,3 +393,7 @@ app/
 
 #Conclusão
 Para quem está iniciando com Angular.js, seguir estes 5 pontos vai evitar muita dor de cabeça. Porém recomendo intensamente que leia e siga o [Style Guide](https://github.com/johnpapa/angularjs-styleguide) completo de [@jhonpapa](https://twitter.com/john_papa).
+
+Deixe seu comentário.
+
+Cheers,
