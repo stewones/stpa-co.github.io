@@ -52,7 +52,7 @@ a
 .home
   position: fixed
   left: 10px
-  top: 10px
+  top: 13px
   overflow: hidden
   z-index: 99
   color: #ddd !important
@@ -288,10 +288,7 @@ a
       color: #333
 
 .post-reading
-  position: absolute
-  top: 10px
-  right: 191px
-  line-height: 44px
+  line-height: 30px
   display: inline-block
   white-space: nowrap
   color: rgba(0,0,0,0.25)
@@ -301,6 +298,7 @@ a
   font-style: normal
   font-family: $font-sans
   z-index: 999
+  margin: -10px 0 14px
 .tag-articleimage .post-reading
   color: rgba(255,255,255,0.9)
   text-shadow: 0px 1px 4px rgba(0,0,0,0.25), 0px 0px 1px rgba(0,0,0,0.5)
@@ -373,7 +371,7 @@ a
       padding-left: 0px
       line-height: 1.0
       color: #fff
-      margin-bottom: 21px
+      margin-bottom: 0
       text-shadow: 0px 1px 16px rgba(0,0,0,0.5), 0px 0px 1px rgba(0,0,0,0.5)
     .author-image
       display: inline-block
@@ -591,6 +589,7 @@ a
         padding-left: 100px
         &.published
           color: #999
+          font-size: 12px
     .isRight
       float: right
       width: 47%
@@ -621,6 +620,8 @@ a
   text-align: left
   padding: 20px 0 0
   a
+    float: left
+    margin-bottom: 16px
     text-decoration: none
     color: #bbb
     padding-left: 12px
@@ -771,10 +772,13 @@ pre
   //margin: -10px 0 0 38px
 
 .social
-  margin: 0 0 0 -39px
+  margin: 12px 0 0px 99px
   ul
+    margin: 0
+    padding: 0
     li
-      margin-right: 10px
+      margin-right: 5px
+      margin-left: 0 !important
       float: left
       text-decoration: none
       display: inline-block
@@ -795,3 +799,17 @@ pre
   margin-top: 20px
   position: absolute
   z-index: 10
+
+.post-sharer
+  width: 35px
+  position: fixed
+  margin-left: -35px
+  top: 296px
+  overflow: hidden
+  z-index: 99
+  display: none
+
+.noarticleimage
+  .post-reading
+    color: #b3b3b1
+    opacity: 1

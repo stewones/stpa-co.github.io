@@ -17,7 +17,7 @@
             <div class="post-meta">
                 <h1 class="post-title">{{ page.title }}</h1>
                 <h2 class="post-subtitle">{{ page.subtitle }}</h2>
-                {% include socialite.html %}
+                {% include readtime.html %}                
                 <div class="cf post-meta-text">
                     <div class="author-image" style="background-image: url({{ site.author_image }})"></div>
                     <h4 class="author-name">{{ site.author }}</h4>
@@ -31,80 +31,77 @@
             </div>
         </div>
         <script>
-                                        (function ($) {
-                                            "use strict";
-                                            $(document).ready(function(){
-                                                var $window = $(window),
-                                                    $image = $('.post-image-image');
-                                                $window.on('scroll', function() {
-                                                    var top = $window.scrollTop();
-                                                    if (top < 0 || top > 1500) { return; }
-                                                    $image
-                                                        .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
-                                                        .css('opacity', 1-Math.max(top/700, 0));
-                                                });
-                                                $window.trigger('scroll');
-                                                var height = $('.article-image').height();
-                                                    $('.post-content').css('padding-top', height + 'px');
-                                                $(function() {
-                                                    $('a[href*=#]:not([href=#])').click(function() {
-                                                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                                                        var target = $(this.hash);
-                                                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                                                        if (target.length) {
-                                                        $('html,body').animate({
-                                                            scrollTop: target.offset().top
-                                                        }, 500);
-                                                        return false;
-                                                        }
-                                                    }
-                                                    });
-                                                });
-                                            });
-                                        }(jQuery));
+        (function ($) {
+                "use strict";
+                $(document).ready(function(){
+                    autoHideSharerWhenHasImage();
+                    var $window = $(window),
+                        $image = $('.post-image-image');
+                    $window.on('scroll', function() {
+                        var top = $window.scrollTop();
+                        if (top < 0 || top > 1500) { return; }
+                        $image
+                            .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+                            .css('opacity', 1-Math.max(top/700, 0));
+                    });
+                    $window.trigger('scroll');
+                    var height = $('.article-image').height();
+                        $('.post-content').css('padding-top', height + 'px');
+                        //$('.post-sharer').css('top', (height) + 'px');
+                    $(function() {
+                        $('a[href*=#]:not([href=#])').click(function() {
+                        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                            var target = $(this.hash);
+                            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                            if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 500);
+                            return false;
+                            }
+                        }
+                        });
+                    });
+                });
+                      
+        }(jQuery));
         </script>
         {% else %}
         <div class="noarticleimage">
             <div class="post-meta">
-                <h1 class="post-title">{{ page.title }}</h1>
+                <h1 class="post-title">{{ page.title }}</h1>                
                 <div class="cf post-meta-text">
                     <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
                     <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author }}</h4>
                     em
                     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string | replace:'Jan','Jan' | replace:'Feb','Fev' | replace:'Mar','Mar' | replace:'Apr','Abr' | replace:'May','Mai' | replace:'Jun','Jun' | replace:'Jul','Jul' | replace:'Aug','Ago' | replace:'Sep','Set' | replace:'Oct','Out' | replace:'Nov','Nov' | replace:'Dec','Dez' }}</time>
                     <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->
+                    &nbsp;-&nbsp; {% include readtime.html %}
                 </div>
             </div>
         </div>
         <br>
         <br>
         <br>
+        <script>
+            $(document).ready(function(){                   
+                autoHideSharerWhenHasNotImage();           
+            }(jQuery));
+        </script>
         {% endif %}
-        <section class="post-content">
-            <div class="post-reading readtime">
-                {% if site.readtime %}
-                {% if site.wpm %}
-                {% assign readtime = content | strip_html | number_of_words | append: '.0'| split:'.' | first | divided_by:site.wpm %}
-                {% else %}
-                {% assign readtime = content | strip_html | number_of_words | append: '.0' | split:'.' | first | divided_by:180 %}
-                {% endif %}
-                {% endif %}
-                {% if site.readtime %}
-                <i class="fa fa-clock-o"></i>
-                {% if readtime > 1 and readtime < 1.5 %}1 minuto de leitura{% endif %}
-                {% if readtime > 1.5 %}<span class="time">{{ readtime }}</span> minutos de leitura{% endif %}
-                {% if readtime <= 1 %}Menos de 1 minuto de leitura{% endif %}
-                {% endif %}
-            </div>
+        <section class="post-content">           
             <a name="topofpage"></a>
             <div style="display: none;" itemprop="wordCount">{% assign wordCount = content | strip_html | number_of_words %}{{ wordCount }}</div>
             <div itemprop="articleBody">
+                <div class="post-sharer">
+                    {% include sharer.html %}
+                </div>
                 {{content}}
             </div
         </section>
-        <footer class="post-footer">
-            {% include sharer.html %}
-        </footer>
+        <!--         <footer class="post-footer">
+                                                {% include sharer.html %}
+        </footer> -->
         {% if page.comments %}
         {% include disqus/comments.html %}
         {% endif %}
@@ -118,7 +115,7 @@
                     <hr>
                     <p class="published">Publicado em <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string | replace:'Jan','Jan' | replace:'Feb','Fev' | replace:'Mar','Mar' | replace:'Apr','Abr' | replace:'May','Mai' | replace:'Jun','Jun' | replace:'Jul','Jul' | replace:'Aug','Ago' | replace:'Sep','Set' | replace:'Oct','Out' | replace:'Nov','Nov' | replace:'Dec','Dez' }}</time>
                     </p>
-                    {% include sharer.html %}
+                    {% include socialite.html %}
                 </section>
             </div>
             {{/post}}
