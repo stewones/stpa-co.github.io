@@ -17,15 +17,17 @@ layout: default
     <div class="custom-links">
       {% for social in site.social %}
         {% if social.url %}
-        <a class="icon-{{ social.icon }}" href="{{ social.url }}">
-          <i class="fa fa-{{ social.icon }}"></i>
-        </a>
-        {% endif %}
-        &nbsp;&nbsp;·&nbsp;&nbsp;
+        <span class="menu-{{ social.icon }}">
+          <a class="icon-{{ social.icon }}" href="{{ social.url }}">
+            <i class="fa fa-{{ social.icon }}"></i>
+          </a>
+          &nbsp;&nbsp;·&nbsp;&nbsp;
+        </span>
+        {% endif %}        
       {% endfor %}
-      <a href="/about/">Sobre</a>
+      <a href="/about/">About</a>
       &nbsp;&nbsp;·&nbsp;&nbsp;
-      <a href="{{ site.url }}/categories/">Categorias</a>
+      <a href="{{ site.url }}/categories/">Categories</a>
     </div>
 </header>
 

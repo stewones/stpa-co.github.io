@@ -91,7 +91,7 @@ function autoHideSharerWhenHasNotImage() {
         var timer;
         var scrolltoppx = $(this).scrollTop();
         //console.debug(scrolltoppx, $(window).height() , (getDocHeight()-300));    
-        if (scrolltoppx >= (getDocHeight() - ($(window).height() + 700)) || scrolltoppx < $(window).height() - 250) {
+        if (scrolltoppx >= (getDocHeight() - ($(window).height() + 700)) || scrolltoppx < $(window).height() - 330/*250*/) {
             $('.post-sharer').fadeOut(300);
         } else {
             $('.post-sharer').fadeIn(300);
