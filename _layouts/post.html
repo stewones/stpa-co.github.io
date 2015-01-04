@@ -32,10 +32,9 @@
         </div>
         <script>
                 (function ($) {
-                        "use strict";
-
+                        "use strict";                        
                         $(document).ready(function(){
-                            
+                            //autoHideSharerWhenHasImage();
                             var $window = $(window),
                                 $image = $('.post-image-image');
                             $window.on('scroll', function() {
@@ -44,6 +43,13 @@
                                 $image
                                     .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
                                     .css('opacity', 1-Math.max(top/700, 0));
+                                                var scrolltoppx = $(this).scrollTop();
+            //console.debug(scrolltoppx, $(window).height() , (getDocHeight()-300));    
+            if (scrolltoppx >= (getDocHeight() - ($(window).height() + 700)) || scrolltoppx < $(window).height() - 250) {
+                $('.post-sharer').fadeOut(300);
+            } else {
+                $('.post-sharer').fadeIn(300);
+            }
                             });
                                 $window.trigger('scroll');
                                 var height = $('.article-image').height();
@@ -69,7 +75,6 @@
                         });
                             
                 }(jQuery));
-                autoHideSharerWhenHasImage();
         </script>
         {% else %}
         <div class="noarticleimage">

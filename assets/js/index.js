@@ -70,7 +70,7 @@ function getDocHeight() {
 }
 
 function autoHideSharerWhenHasImage() {
-    $(document).ready(function() {
+   
         //auto-hide sharer
         $(window).scroll(function() {
             var timer;
@@ -83,7 +83,7 @@ function autoHideSharerWhenHasImage() {
             }
 
         });
-    });
+
 
 }
 
