@@ -70,9 +70,6 @@ function getDocHeight() {
 }
 
 function autoHideSharerWhenHasImage() {
-    var $window = $(window),
-        $image = $('.post-image-image');
-    var top = $window.scrollTop();
     //auto-hide sharer
     $(window).scroll(function() {
         var timer;
@@ -86,17 +83,6 @@ function autoHideSharerWhenHasImage() {
 
     });
 
-    $window.on('scroll', function() {
-        var top = $window.scrollTop();
-        if (top < 0 || top > 1500) {
-            return;
-        }
-        $image
-            .css('transform', 'translate3d(0px, ' + top / 3 + 'px, 0px)')
-            .css('opacity', 1 - Math.max(top / 700, 0));
-    });
-    $window.trigger('scroll');
-
 }
 
 function autoHideSharerWhenHasNotImage() {
@@ -105,7 +91,7 @@ function autoHideSharerWhenHasNotImage() {
         var timer;
         var scrolltoppx = $(this).scrollTop();
         //console.debug(scrolltoppx, $(window).height() , (getDocHeight()-300));    
-        if (scrolltoppx >= (getDocHeight() - ($(window).height() + 700)) || scrolltoppx < $(window).height() - 330 /*250*/ ) {
+        if (scrolltoppx >= (getDocHeight() - ($(window).height() + 700)) || scrolltoppx < $(window).height() - 330/*250*/) {
             $('.post-sharer').fadeOut(300);
         } else {
             $('.post-sharer').fadeIn(300);

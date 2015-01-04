@@ -35,11 +35,16 @@
                 "use strict";
                 $(document).ready(function(){
                     
-                
-
-        
-                  
-
+                    var $window = $(window),
+                        $image = $('.post-image-image');
+                    $window.on('scroll', function() {
+                        var top = $window.scrollTop();
+                        if (top < 0 || top > 1500) { return; }
+                        $image
+                            .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+                            .css('opacity', 1-Math.max(top/700, 0));
+                    });
+                    
                         var height = $('.article-image').height();
                         //console.debug(height);
                         $('.post-content').css('padding-top', height + 'px');
@@ -57,10 +62,9 @@
                             return false;
                             }
                         //}
-                        });      
-
-  autoHideSharerWhenHasImage();
-                                      
+                        });
+                    autoHideSharerWhenHasImage();
+                    $window.trigger('scroll');
                 });
                     
         }(jQuery));
