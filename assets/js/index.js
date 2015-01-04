@@ -82,7 +82,6 @@ function autoHideSharerWhenHasImage() {
         }
 
     });
-
 }
 
 function autoHideSharerWhenHasNotImage() {
