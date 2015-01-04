@@ -34,7 +34,7 @@
         (function ($) {
                 "use strict";
                 $(document).ready(function(){
-                    
+                    autoHideSharerWhenHasImage();
                     var $window = $(window),
                         $image = $('.post-image-image');
                     $window.on('scroll', function() {
@@ -62,8 +62,7 @@
                             return false;
                             }
                         //}
-                        });
-                    autoHideSharerWhenHasImage();
+                        });                    
                 });
                     
         }(jQuery));
