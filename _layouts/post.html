@@ -31,43 +31,43 @@
             </div>
         </div>
         <script>
-        (function ($) {
-                "use strict";
-                $(document).ready(function(){
-                    
-                    var $window = $(window),
-                        $image = $('.post-image-image');
-                    $window.on('scroll', function() {
-                        var top = $window.scrollTop();
-                        if (top < 0 || top > 1500) { return; }
-                        $image
-                            .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
-                            .css('opacity', 1-Math.max(top/700, 0));
-                    });
-                    
-                        var height = $('.article-image').height();
-                        //console.debug(height);
-                        $('.post-content').css('padding-top', height + 'px');
-                        //console.debug($('.post-content').css('padding-top'));
-                        //$('.post-sharer').css('top', (height) + 'px');
-                
-                        $('a[href*=#]:not([href=#])').click(function() {
-                        //if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                            var target = $(this.hash);
-                            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                            if (target.length) {
-                            $('html,body').animate({
-                                scrollTop: target.offset().top
-                            }, 500);
-                            return false;
-                            }
-                        //}
+                (function ($) {
+                        "use strict";
+                        $(document).ready(function(){
+                            
+                            var $window = $(window),
+                                $image = $('.post-image-image');
+                            $window.on('scroll', function() {
+                                var top = $window.scrollTop();
+                                if (top < 0 || top > 1500) { return; }
+                                $image
+                                    .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+                                    .css('opacity', 1-Math.max(top/700, 0));
+                            });
+                            
+                                var height = $('.article-image').height();
+                                //console.debug(height);
+                                $('.post-content').css('padding-top', height + 'px');
+                                //console.debug($('.post-content').css('padding-top'));
+                                //$('.post-sharer').css('top', (height) + 'px');
+                                autoHideSharerWhenHasImage();
+                                $('a[href*=#]:not([href=#])').click(function() {
+                                //if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                                    var target = $(this.hash);
+                                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                                    if (target.length) {
+                                    $('html,body').animate({
+                                        scrollTop: target.offset().top
+                                    }, 500);
+                                    return false;
+                                    }
+                                //}
+                                });
+                        
+                            $window.trigger('scroll');
                         });
-                    autoHideSharerWhenHasImage();
-                    $window.trigger('scroll');
-                });
-                    
-        }(jQuery));
+                            
+                }(jQuery));
         </script>
         {% else %}
         <div class="noarticleimage">
@@ -87,16 +87,16 @@
         <br>
         <br>
         <script>
-                                            $(document).ready(function(){
-                                        autoHideSharerWhenHasNotImage();
-                            }(jQuery));
+                                                    $(document).ready(function(){
+                                                autoHideSharerWhenHasNotImage();
+                                    }(jQuery));
         </script>
         <style>
-                            .post-meta { padding-bottom: 13px; margin-top: 0; }
-                            .content article { padding: 4px 0; }
-                            @media (max-width: 400px) {
-                                .post-meta { padding-bottom: 13px; margin-top: 90px !important; }
-                            }
+                                    .post-meta { padding-bottom: 13px; margin-top: 0; }
+                                    .content article { padding: 4px 0; }
+                                    @media (max-width: 400px) {
+                                        .post-meta { padding-bottom: 13px; margin-top: 90px !important; }
+                                    }
         </style>
         {% endif %}
         <section class="post-content">
@@ -110,7 +110,7 @@
             </div
         </section>
         <!--         <footer class="post-footer">
-                                                                        {% include sharer.html %}
+                                                                                    {% include sharer.html %}
         </footer> -->
         {% if page.comments %}
         {% include disqus/comments.html %}
