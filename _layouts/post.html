@@ -46,9 +46,14 @@
                     var scrolltoppx = $(this).scrollTop();
                     //console.debug(scrolltoppx, $(window).height() - 250, (getDocHeight() - 300));
                     if (scrolltoppx >= (getDocHeight() - ($(window).height() + 700)) || scrolltoppx < $(window).height() - 250) {
-                        $('.post-sharer').fadeOut(300);
+                        $('.post-sharer').fadeOut(300);                       
                     } else {
-                        $('.post-sharer').fadeIn(300);
+                        $('.post-sharer').fadeIn(300);                       
+                    }
+                    if (scrolltoppx >= (getDocHeight() - ($(window).height() + 700))) {
+                        $('.post-top').fadeIn(300);
+                    } else {                        
+                        $('.post-top').fadeOut(300);
                     }
                 });
                 $window.trigger('scroll');
@@ -98,9 +103,14 @@
                 var scrolltoppx = $(this).scrollTop();
                     //console.debug(scrolltoppx, $(window).height() , (getDocHeight()-300));
                 if (scrolltoppx >= (getDocHeight() - ($(window).height() + 700)) || scrolltoppx < $(window).height() - 330 /*250*/ ) {
-                    $('.post-sharer').fadeOut(300);
+                    $('.post-sharer').fadeOut(300);                    
                 } else {
-                    $('.post-sharer').fadeIn(300);
+                    $('.post-sharer').fadeIn(300);                    
+                }
+                if (scrolltoppx >= (getDocHeight() - ($(window).height() + 700))) {
+                    $('.post-top').fadeIn(300);
+                } else {                        
+                    $('.post-top').fadeOut(300);
                 }
             });
         }(jQuery));
@@ -175,33 +185,16 @@
                         Math.max(D.body.offsetHeight, D.documentElement.offsetHeight),
                         Math.max(D.body.clientHeight, D.documentElement.clientHeight)
                     )
-                }
-                function autoHideSharerWhenHasImage() {
-                        //auto-hide sharer
-                        $(window).scroll(function() {
-                            var timer;
-                            var scrolltoppx = $(this).scrollTop();
-                                //console.debug(scrolltoppx, $(window).height() , (getDocHeight()-300));
-                            if (scrolltoppx >= (getDocHeight() - ($(window).height() + 700)) || scrolltoppx < $(window).height() - 250) {
-                                $('.post-sharer').fadeOut(300);
-                            } else {
-                                $('.post-sharer').fadeIn(300);
-                            }
-                        });
-                }
-                function autoHideSharerWhenHasNotImage() {
-                    //auto-hide sharer
-                    $(window).scroll(function() {
-                        var timer;
-                        var scrolltoppx = $(this).scrollTop();
-                            //console.debug(scrolltoppx, $(window).height() , (getDocHeight()-300));
-                        if (scrolltoppx >= (getDocHeight() - ($(window).height() + 700)) || scrolltoppx < $(window).height() - 330 /*250*/ ) {
-                            $('.post-sharer').fadeOut(300);
-                        } else {
-                            $('.post-sharer').fadeIn(300);
-                        }
+                } 
+
+                $(document).ready(function(){
+                    $('a.post-top').click(function() {                
+                        $('html,body').animate({
+                            scrollTop: 0
+                        }, 500);
+                        return false;
                     });
-                }
+            });
         </script>
     </body>
 </html>
