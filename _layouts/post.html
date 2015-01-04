@@ -33,6 +33,7 @@
         <script>
                 (function ($) {
                         "use strict";
+                        autoHideSharerWhenHasImage();
                         $(document).ready(function(){
                             
                             var $window = $(window),
@@ -44,13 +45,13 @@
                                     .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
                                     .css('opacity', 1-Math.max(top/700, 0));
                             });
-                            
+                                $window.trigger('scroll');
                                 var height = $('.article-image').height();
                                 //console.debug(height);
                                 $('.post-content').css('padding-top', height + 'px');
                                 //console.debug($('.post-content').css('padding-top'));
                                 //$('.post-sharer').css('top', (height) + 'px');
-                                autoHideSharerWhenHasImage();
+                                
                                 $('a[href*=#]:not([href=#])').click(function() {
                                 //if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                                     var target = $(this.hash);
@@ -64,7 +65,7 @@
                                 //}
                                 });
                         
-                            $window.trigger('scroll');
+                            
                         });
                             
                 }(jQuery));
