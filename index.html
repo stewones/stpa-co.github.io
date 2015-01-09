@@ -21,13 +21,19 @@ layout: default
           <a class="icon-{{ social.icon }}" href="{{ social.url }}">
             <i class="fa fa-{{ social.icon }}"></i>
           </a>
-          &nbsp;&nbsp;·&nbsp;&nbsp;
+          {% if forloop.rindex != 1 %}
+            &nbsp;&nbsp;·&nbsp;&nbsp;
+          {% endif %} 
         </span>
         {% endif %}        
       {% endfor %}
+      <br />
+      <br />
       <a href="/about/">About</a>
       &nbsp;&nbsp;·&nbsp;&nbsp;
       <a href="{{ site.url }}/categories/">Categories</a>
+      &nbsp;&nbsp;·&nbsp;&nbsp;
+      <a href="{{ site.url }}/projects/">Projects</a>
     </div>
 </header>
 

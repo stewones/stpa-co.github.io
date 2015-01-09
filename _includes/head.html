@@ -28,14 +28,28 @@
     <script type="text/javascript" src="{{ "/assets/js/jquery.fitvids.js" | prepend: site.baseurl  }}"></script>
     <script type="text/javascript" src="{{ "/assets/js/index.js" | prepend: site.baseurl  }}"></script>
     <meta name="google-translate-customization" content="76a8b8ed1f21aed-448f5015b03a60e8-g569ba4d2fa1a7866-7"></meta>
+    <script type="text/javascript" src="{{ "/assets/js/filterable.pack.js" | prepend: site.baseurl }}"></script>
     <style>
         @media (max-width: 400px) {
             .social { margin: 17px 0 5px; text-align: center; }
             .social ul { text-align: center; display: inline-block; width: 224px;}
             .social ul li { width: 53px; display: inline-block; margin: 0 21px 0;}
-            .home { position: absolute; }           
+                    .home { position: absolute; }
             .post-title { font-size: 40px !important; }
-            .menu-facebook, .menu-google-plus { display: none; }
         }
+        /* Content - Portfolio Listing */
+        ul#portfolio-filter{ margin: -20px 0; padding: 0; height: 64px; line-height: 64px}
+        ul#portfolio-filter li{ display: inline;  margin-left: 0}
+        ul#portfolio-filter a{ margin-right: 0.5em; padding: 7px 10px; background: #FFF; color: #AAA; font-weight: bold; text-decoration: none; }
+        ul#portfolio-filter a:hover, ul#portfolio-filter a.current{ color: #888; }
+        ul#portfolio-filter a.current{ background-color: #DDD; }
+        ul#portfolio-list{ margin: 0; padding: 0; list-style: none; }
+        ul#portfolio-list h2{ text-align: center; }
+        ul#portfolio-list li{ width: 255px; height: 330px; display: block; float: left; margin-right: 45px; overflow: hidden;  margin-left: 0; margin-bottom: 30px;}
+        ul#portfolio-list li a{ display: block; overflow: hidden; border: 1px solid #CDCDCD; background: #eee; }
+        ul#portfolio-list li p{ text-align: center; font-size: 18px; line-height: 21px; color: #333; margin: 5px 0; padding: 0;}
+        ul#portfolio-list img { opacity: .7; }
+        ul#portfolio-list img:hover { opacity: 1; }
+        .boundingBox ul { display: inline-block;}
     </style>
 </head>
