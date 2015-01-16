@@ -103,7 +103,7 @@ projects:
     image: /assets/images/projects/thumb/thumb_meditator.jpg
     desc: Meditator is a medium inspired Jekyll blog theme
 
-  - name: angular-my-modal
+  - name: angular my modal
     categories: open-source bootstrap angularjs
     link: https://angular-my-modal.stpa.co
     image: /assets/images/projects/thumb/thumb_angular_modal.jpg
@@ -120,3 +120,9 @@ projects:
     link: http://www.versaocomentada.com.br
     image: /assets/images/projects/thumb/thumb_versao_comentada.jpg
     desc: Video blog with the most important fights commented
+
+  - name: angular morris chart
+    categories: open-source angularjs
+    link: https://angular-morris-chart.stpa.co
+    image: /assets/images/projects/thumb/thumb_angular_morris_chart.jpg
+    desc: Provides wrapper directives of morris.js for angular
