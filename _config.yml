@@ -97,6 +97,12 @@ projectsCategories:
 
 # portfolio categories
 projects:
+  - name: Glamoux
+    categories: ecommerce angular node mongodb
+    link: https://www.glamoux.com
+    image: https://glamoux-assets.s3.amazonaws.com/glam-white-158.png
+    desc: Ecommerce de bijuterias
+    
   - name: Meditator
     categories: open-source jekyll
     link: https://meditator.stpa.co
