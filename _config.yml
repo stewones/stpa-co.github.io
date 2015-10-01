@@ -100,7 +100,7 @@ projects:
   - name: Glamoux
     categories: ecommerce angular node mongodb
     link: https://www.glamoux.com
-    image: https://glamoux-assets.s3.amazonaws.com/glam-white-158.png
+    image: https://glamoux-assets.s3.amazonaws.com/perfil-1024x1024.png
     desc: Ecommerce de bijuterias
     
   - name: Meditator
