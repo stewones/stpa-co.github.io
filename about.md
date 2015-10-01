@@ -40,5 +40,5 @@ Este site é open-source, faça um fork no [GitHub](https://github.com/stpa-co/m
 Se você tem uma dúvida ou sugestão, entre em contato comigo pelo email [talk@stpa.co](mailto: talk@stpa.co).
 
 
-Whis website is open-source, fork and use it at [GitHub](https://github.com/stpa-co/meditator).
+This website is open-source, fork and use it at [GitHub](https://github.com/stpa-co/meditator).
 If you have a question or suggestion, please contact me in [talk@stpa.co](mailto: talk@stpa.co).
