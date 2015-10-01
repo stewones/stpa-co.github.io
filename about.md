@@ -6,7 +6,7 @@ permalink: /about/
 
 Comecei a programar por volta de 2007, mas antes disso já brincava com HTML, CSS e o finado Flash. Nesse tempo desenvolvi vários sites, ecommerces, blogs, hotsites, MVP´s entre outros. Utilizava diversas tecnologias e linguagens, mas hoje em dia, o que gosto mesmo é do JavaScript. Simplesmente pelo fato de se poder fazer tudo com JS: Desde frontend e servidor a banco de dados, com a mais alta performance, de maneira rápida, escalável e de fácil manutenção.
 
-I started to dev back in 2007, but before i already was playing with HTML, CSS and the R.I.P Flash AS 1&2. In that time i developed several sites, hotsites, blogs, ecommerces, MVP's and among others. Used various technologies and languages, but nowadays the language I really like to work is the JavaScript. Simply by the fact of being able to do everything with JS: Since frontend/server and the database, all with the highest performance, scalable and easy to maintain.
+I started to dev back in 2007, but i was already used to playing with HTML, CSS and the R.I.P Flash Action Script, some years before. In that time i developed several sites, hotsites, blogs, ecommerces, MVP's and among others. Used various technologies and languages, but nowadays the language I really enjoy to work is the JavaScript. Simply by the fact of being able to do everything with JS: From front/server to database, all with the highest performance, scalable and easy to maintain.
 
 Some skills
 
