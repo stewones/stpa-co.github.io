@@ -51,12 +51,12 @@ social:
     share_title: ?text=
     share_link: "&amp;url="
 
-  - icon: facebook
-    url:  https://facebook.com/stewones
-    desc: Connect me at Facebook
-    share_url: //www.facebook.com/sharer.php
-    share_title: ?t=
-    share_link: "&amp;u="
+ # - icon: facebook
+  #  url:  https://facebook.com/stewones
+  #  desc: Connect me at Facebook
+  #  share_url: //www.facebook.com/sharer.php
+  #  share_title: ?t=
+  #  share_link: "&amp;u="
 
   - icon: github
     url:  https://github.com/stewones
