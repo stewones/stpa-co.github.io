@@ -101,7 +101,7 @@ projects:
     categories: ecommerce angular node mongodb
     link: https://www.glamoux.com
     image: https://glamoux-assets.s3.amazonaws.com/perfil-1024x1024.png
-    desc: Ecommerce de bijuterias
+    desc: Costume jewelry e-commerce
     
   - name: Meditator
     categories: open-source jekyll
