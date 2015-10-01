@@ -4,15 +4,11 @@ title: Sobre
 permalink: /about/
 ---
 
-Olá, meu nome é Stewan. Passei anos da minha vida desenvolvendo websites e aplicações, utilizando um monte de linguagens e frameworks, como PHP, JavaScript, CodeIgniter, Laravel, KnockoutJS, EmberJS, AngularJS, dentre outras tecnologias.
+Comecei a programar por volta de 2007, mas antes disso já brincava com HTML, CSS e o finado Flash. Nesse tempo desenvolvi vários sites, ecommerces, blogs, hotsites, MVP´s entre outros. Utilizava diversas tecnologias e linguagens, mas hoje em dia, o que gosto mesmo é do JavaScript. Simplesmente pelo fato de se poder fazer tudo com JS: Desde frontend e servidor a banco de dados, com a mais alta performance, de maneira rápida, escalável e de fácil manutenção.
 
-Ao longo destes anos, acabei escrevendo punhados de APIs, Interfaces, Módulos e Componentes, que me proporcionaram uma perspectiva considerável sobre como desenvolver boas aplicações, tanto em ambiente web quanto mobile (híbrido).
+I started to dev back in 2007, but before i already was playing with HTML, CSS and the R.I.P Flash AS 1&2. In that time i developed several sites, hotsites, blogs, ecommerces, MVP's and among others. Used various technologies and languages, but nowadays the language I really like to work is the JavaScript. Simply by the fact of being able to do everything with JS: Since frontend/server and the database, all with the highest performance, scalable and easy to maintain.
 
-Quando comecei a contribuir mais frequentemente para alguns grupos e repositórios, pude perceber o grande prazer que é transmitir conhecimento, analisar e aprender com  os problemas de outras pessoas.
-
-Pensando em abordar alguns assuntos de minha área, resolvi criar este site/blog para ajudar e aprender cada vez mais com a comunidade.
-
-Pretendo abordar os seguintes assuntos:
+Some skills
 
 - Frontend
 	- HTML/CSS
@@ -23,7 +19,6 @@ Pretendo abordar os seguintes assuntos:
 	- Protractor / Jasmine
 	- Jekyll
 
-
 - Backend
 	- PHP
 	- MySQL
@@ -32,6 +27,7 @@ Pretendo abordar os seguintes assuntos:
 	- GitHub Pages
 	- Amazon Web Services
 	- CloudFlare
+	- MongoDB
 	- NodeJS
 	- ExpressJS
 	- WordPress
@@ -40,8 +36,11 @@ Pretendo abordar os seguintes assuntos:
 	- Laravel
 
 
+Este site é open-source, faça um fork no [GitHub](https://github.com/stpa-co/meditator).
+
 Se você tem uma dúvida ou sugestão, entre em contato comigo pelo email [talk@stpa.co](mailto: talk@stpa.co).
 
-Este site é open-source, faça um fork no [GitHub](https://github.com/stpa-co/meditator), abra uma issue e envie seu PR (=
 
-Entenda um pouco sobre as tecnologias que utilizei para o desenvolvimento [aqui](https://stpa.co/github/jekyll/2014/12/12/sirva-seu-blog-com-github-pages-like-a-kyller-part-1.html).
+Whis website is open-source, fork and use it at [GitHub](https://github.com/stpa-co/meditator).
+
+If you have a question or suggestion, please contact me in [talk@stpa.co](mailto: talk@stpa.co).
