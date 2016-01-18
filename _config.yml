@@ -98,7 +98,7 @@ projectsCategories:
 # portfolio categories
 projects:
   - name: Glamoux
-    categories: ecommerce angular node mongodb
+    categories: ecommerce angularjs node mongodb
     link: https://www.glamoux.com
     image: https://glamoux-assets.s3.amazonaws.com/perfil-1024x1024.png
     desc: Costume jewelry e-commerce
@@ -119,7 +119,7 @@ projects:
     categories: closed-source bootstrap emberjs pyrocms
     link: https://tt.stpa.co
     image: /assets/images/projects/thumb/thumb_ticktask.jpg
-    desc: An app that will organize your financial life
+    desc: An web app that will organize your financial life
 
   - name: Versão Comentada
     categories: closed-source bootstrap pyrocms
@@ -131,4 +131,4 @@ projects:
     categories: open-source angularjs
     link: https://angular-morris-chart.stpa.co
     image: /assets/images/projects/thumb/thumb_angular_morris_chart.jpg
-    desc: Provides wrapper directives of morris.js for angular
+    desc: Provides wrapper directives of morris.js for angular 1.x
