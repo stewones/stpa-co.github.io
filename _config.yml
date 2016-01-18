@@ -74,7 +74,7 @@ social:
 
 # portfolio categories
 projectsCategories:
-  - name: open-source
+  - name: Open Source
     slug: open-source
 
   - name: Jekyll
