@@ -77,9 +77,6 @@ projectsCategories:
   - name: open-source
     slug: open-source
 
-  - name: closed-source
-    slug: closed-source
-
   - name: Jekyll
     slug: jekyll
 
@@ -116,13 +113,13 @@ projects:
     desc: Provides a reusable way to do modals in angular
 
   - name: TickTask
-    categories: closed-source bootstrap emberjs pyrocms
+    categories: bootstrap emberjs pyrocms
     link: https://tt.stpa.co
     image: /assets/images/projects/thumb/thumb_ticktask.jpg
     desc: An web app that will organize your financial life
 
   - name: Versão Comentada
-    categories: closed-source bootstrap pyrocms
+    categories: bootstrap pyrocms
     link: http://www.versaocomentada.com.br
     image: /assets/images/projects/thumb/thumb_versao_comentada.jpg
     desc: Video blog with the most important fights commented
