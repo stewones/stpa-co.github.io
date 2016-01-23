@@ -10,7 +10,6 @@ image: false
 comments: true
 description: Hoje estou inspirado pra falar sobre teste unitário de serviço utilizando mocha.js. Nosso serviço deverá trabalhar dentro do node e no browser através do mesmo código.
 ---
-[English version](http://stpa.co/angularjs/mocha/2016/01/22/angular-mocha-service-tdd.html)
 
 Olá devs,
 
