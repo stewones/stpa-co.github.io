@@ -376,6 +376,8 @@ _Bom agora é muito fácil, basta criar nosso serviço em angular separadamente 
 
 <img src="http://i.imgur.com/TUB57Xl.png">
 
+<br />
+
 Working sample. _Eexemplo em funcionamento._
 
 <iframe width="100%" height="300" src="//jsfiddle.net/stewones/8an2hwyn/61/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
