@@ -30,7 +30,7 @@ author_bio: >
 paginate: 5
 
 #url: "http://127.0.0.1:4000"
-url: "https://stpa.co" # the base hostname & protocol for your site
+url: "http://stpa.co" # the base hostname & protocol for your site
 excerpt_separator: "<!-- more -->"
 
 comments: true
