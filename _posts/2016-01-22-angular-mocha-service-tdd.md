@@ -23,13 +23,11 @@ Node e npm instalados. Para este post vou usar o node 0.12.7 e npm 2.11.3 - meu 
 ### Intro
 Mocha é uma framework javascript para testes, que roda no node.js e no browser. Ele é simples, flexível e divertido.
 
-<img src="http://data7.lustich.de/bilder/l/29185-really-dog.jpg">
+<img src="http://i.imgur.com/AxA93C2.jpg">
 
 haha, é isto que dizem, e concordo plenamente. Tirado da própria [doc deles](https://github.com/mochajs/mocha).
 
-```
-Mocha is a simple, flexible, fun JavaScript test framework for node.js and the browser. For more information view the documentation.
-```
+> Mocha is a simple, flexible, fun JavaScript test framework for node.js and the browser. For more information view the documentation.
 
 ### The Goal
 Ok, para entendermos melhor como tudo isso funciona, vamos imaginar um cenário real onde nosso site irá oferece determinados tipos de serviços, a partir de planos de negócio formados por valor e quantidade. Este site possui um sistema de afiliados e iremos escrever um simples serviço que irá nos calcular uma regra de comissão, para remunerar os usuários que fizerem indicações.
@@ -42,7 +40,7 @@ Os requisitos seriam:
 ### Hands on
 Para começar vamos escrever primeiramente o teste unitário, cujo serviço em angular deverá respeitar. Lembrando que este serviço terá de atender tanto no browser quanto no node, evitando assim códigos duplicados. Imagine se tudo que você fizer no angular, tiver que repetir no node em ?
 
-<img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/173/576/Wat8.jpg?1315930535">
+<img src="http://i.imgur.com/43PGbLW.jpg">
 
 Então vamos começar instalando o mocha de maneira global
 
@@ -172,7 +170,7 @@ Ok, agora temos o teste unitário do serviço porém ele ainda não irá funcion
 
 Agora vamos trabalhar o serviço (lib, ou classe) da comissão. Lembrando que o mesmo poderá ser utilizado tanto pelo browser (com angular), quanto pelo node (com o mocha).
 
-<img src="http://meme4fun.com/images/82fe3851-c357-448b-b47b-94b045dfe850.jpg">
+<img src="http://i.imgur.com/MOC7YeL.jpg">
 
 Precisaremos de uma outra pequena lib chamada `lodash` para efetuar algumas operações.
 
