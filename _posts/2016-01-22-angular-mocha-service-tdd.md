@@ -19,8 +19,10 @@ _Hello devs,_
 
 _Today i am excited to talk about service unit test with mocha.js. Our service should work within the node and also in browser through the same code. I will write this post in PT/EN to try to reach as many people as possible. If goes well I can keep writing in this format =D_
 
-### O básico
+### The basics
 Node e npm instalados. Para este post vou usar o node 0.12.7 e npm 2.11.3 - meu ambiente de desenvolvimento atual é o windows.
+
+_Node and npm installed. For this post I will use the node 0.12.7 and npm 2.11.3 - my current development environment is windows._
 
 ### Intro
 Mocha é uma framework javascript para testes, que roda no node.js e no browser. Ele é simples, flexível e divertido.
