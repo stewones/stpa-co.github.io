@@ -33,7 +33,6 @@ _Mocha é uma framework javascript para testes, que roda no node.js e no browser
 <img src="http://i.imgur.com/AxA93C2.jpg">
 
 haha , that's what they say, and I agree fully. Taken from their [own doc](https://github.com/mochajs/mocha).
-
 _haha, é isto que dizem, e concordo plenamente. Tirado da própria [doc deles](https://github.com/mochajs/mocha)._
 
 > Mocha is a simple, flexible, fun JavaScript test framework for node.js and the browser. For more information view the documentation.
