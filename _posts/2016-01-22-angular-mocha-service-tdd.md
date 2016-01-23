@@ -320,7 +320,7 @@ Bom agora é muito fácil, basta criar nosso serviço em angular separadamente r
 
 Segue um exemplo em funcionamento
 
-<script async src="//jsfiddle.net/stewones/8an2hwyn/61/embed/js,html,result/"></script>
+<iframe width="100%" height="300" src="//jsfiddle.net/stewones/8an2hwyn/61/embedded/js,html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Bom espero que tenham gostado da técnica que utilizei aqui e se tiverem alguma dúvida, só largar um comentário ai embaixo.
 
