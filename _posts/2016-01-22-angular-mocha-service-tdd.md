@@ -201,7 +201,7 @@ Por boas práticas vamos aplicar o Immediately-invoked function expression (IIFE
 	'use strict';
 ```
 
-Criar o construtor de nossa classe com regras padrões e extender quando houver opções
+Agora criamos o construtor de nossa classe com regras padrões e extendemos todas propriedades quando houver opções
 
 ```js
 var Commission = function (options) {
@@ -235,7 +235,7 @@ var Commission = function (options) {
 };
 ```
 
-Lógica para o cálculo das comissões baseadas em range de valor
+Lógica para o cálculo das comissões baseada nos ranges
 
 ```js 
 function calc(arg) {
@@ -307,9 +307,9 @@ mocha commission.spec.js
 
 <img src="http://i.imgur.com/v02PyUf.png">
 
-Tá bom, mas e o angular? aonde entra ele nesta história?
+Tá bom stewones, mas e o angular? aonde entra ele nesta história?
 
-Bom agora é muito fácil, basta criar nosso serviço em angular separadamente retornando a nossa classe que está anexada ao objeto window e ser feliz.
+Bom agora é muito fácil, basta criar nosso serviço em angular separadamente retornando a classe que está anexada ao objeto window e ser feliz.
 
 ```js
 (function () {
@@ -329,7 +329,7 @@ Segue um exemplo em funcionamento
 
 <br />
 
-Bom espero que tenham gostado da técnica que utilizei aqui e se tiverem alguma dúvida, só largar um comentário ai embaixo.
+Espero ter ajudado de alguma forma e que tenham gostado da técnica que utilizei aqui. Se tiverem alguma dúvida, só largar um comentário ai embaixo.
 
 Cya [=
 
