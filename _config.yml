@@ -11,7 +11,7 @@ gems:
 # Site settings
 title: "Stewan Pacheco"
 description: > # this means to ignore newlines until "email:"
-  Graduating BCS, Full Stack Web Developer and Javascript Lover.
+  Graduating BCS, full stack web developer and Javascript lover.
 
 email: talk@stpa.co
 #blog logos
@@ -25,7 +25,7 @@ name: 'Stewan P.'
 author: 'Stewan Pacheco'
 author_image: "https://graph.facebook.com/100002253653400/picture?width=115&height=115"
 author_bio: >
-  Graduating Bachelor of Computer Science, Full Stack Web Developer and Javascript Lover.
+  Graduating Bachelor of Computer Science, full stack web developer and Javascript lover.
 
 paginate: 5
 
