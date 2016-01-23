@@ -8,13 +8,13 @@ tags: [angularjs, mocha]
 featured: false
 image: false
 comments: true
-description: 
+description: Hoje estou inspirado pra falar sobre teste unitário de serviço utilizando mocha.js. Nosso serviço deverá trabalhar dentro do node e no browser através do mesmo código.
 ---
 [English version](http://stpa.co/angularjs/mocha/2016/01/22/angular-mocha-service-tdd.html)
 
 Olá devs,
 
-Hoje estou inspirado pra falar sobre teste unitário de serviço utilizando mocha.js. Nosso serviço deverá trabalhar dentro do node e no browser através do mesmo código. Irei escrever este post em EN/PT pra tentar alcançar o maior número de pessoas possíveis. Caso dê certo posso continuar a escrever assim =D
+Hoje estou inspirado pra falar sobre teste unitário de serviço utilizando mocha.js. Nosso serviço deverá trabalhar dentro do node e no browser através do mesmo código.
 
 ### O Básico
 Node e npm instalados. Para este post vou usar o node 0.12.7 e npm 2.11.3 - meu ambiente de desenvolvimento atual é o windows.
