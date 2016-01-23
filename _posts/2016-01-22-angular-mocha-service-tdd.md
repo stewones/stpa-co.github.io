@@ -380,7 +380,7 @@ _Bom agora é muito fácil, basta criar nosso serviço em angular separadamente 
 
 Working sample. _Eexemplo em funcionamento._
 
-<iframe width="100%" height="300" src="//jsfiddle.net/stewones/8an2hwyn/62/embedded/result,js,html/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/stewones/8an2hwyn/64/embedded/result,js,html/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <br />
 
