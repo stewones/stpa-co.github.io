@@ -33,9 +33,10 @@ _Mocha é uma framework javascript para testes, que roda no node.js e no browser
 <img src="http://i.imgur.com/AxA93C2.jpg">
 
 haha , that's what they say, and I agree fully. Taken from their [own doc](https://github.com/mochajs/mocha).
-_haha, é isto que dizem, e concordo plenamente. Tirado da própria [doc deles](https://github.com/mochajs/mocha)._
 
 > Mocha is a simple, flexible, fun JavaScript test framework for node.js and the browser. For more information view the documentation.
+
+_haha, é isto que dizem, e concordo plenamente. Tirado da própria [doc deles](https://github.com/mochajs/mocha)._
 
 ### The Goal
 
@@ -82,17 +83,13 @@ npm install expect.js --save
 
 ### The spec
 
-Creating the test file
-
-_Criando o arquivo de teste_
+Creating the test file / _Criando o arquivo de teste_
 
 ```
 touch commission.spec.js
 ```
 
-Requiring the dependencies
-
-_Requerendo as dependencias_
+Requiring the dependencies / _Requerendo as dependencias_
 
 ```js
 var expect = require("expect.js"); //to assertion
@@ -164,8 +161,7 @@ var commission = new Commission({
 });
 ```
 
-First requirement
-_Primeiro requesito_
+First requirement / _Primeiro requesito_
 
 ```js
 it('Should have three rules composed with range, percent and fixed value', function() {
@@ -173,7 +169,7 @@ it('Should have three rules composed with range, percent and fixed value', funct
 });
 ``` 
 
-Segundo requesito
+Second requirement / _Segundo requesito_
 
 ```js
 it('Should apply rule on specific value', function() {
@@ -191,7 +187,7 @@ it('Should apply rule on multiple plans', function() {
 });
 ``` 
 
-Terceiro requesito
+Third requirement / _Terceiro requesito_
 
 ```js
 it('Should print specific information about calc', function () {
@@ -201,24 +197,33 @@ it('Should print specific information about calc', function () {
     });
 });
 ``` 
-Ok, agora temos o teste unitário do serviço porém ele ainda não irá funcionar sem a nossa lib.
+
+Ok, we now have the spec for our service but it will not work without the commission lib.
+
+_Ok, agora temos o teste unitário do serviço porém ele ainda não irá funcionar sem a nossa lib._
 
 <br />
 
 ### The service
 
-Agora vamos trabalhar o serviço (lib, ou classe) da comissão. Lembrando que o mesmo poderá ser utilizado tanto pelo browser (com angular), quanto pelo node (com o mocha).
+Now let's work the Commission Service. Not forgetting that it should work both the browser (with angular), as in node (with mocha).
+
+_Agora vamos trabalhar o serviço (lib, ou classe) da comissão. Lembrando que o mesmo poderá ser utilizado tanto pelo browser (com angular), quanto pelo node (com o mocha)._
 
 <img src="http://i.imgur.com/MOC7YeL.jpg">
 
-Precisaremos de uma outra pequena lib chamada `lodash` para efetuar algumas operações.
+We will also need another small lib called ` lodash` to perform some operations.
+
+_Precisaremos também de uma outra pequena lib chamada `lodash` para efetuar algumas operações._
 
 ```
 npm install lodash --save
 touch commission.js
 ```
 
-Requerendo dependências para quando a classe estiver sendo rodada pelo node
+Requiring dependencies for when the lib runs on node
+
+_Requerendo dependências para quando estiver sendo rodada pelo node_
 
 ```js
 //
@@ -229,15 +234,18 @@ if (typeof module !== 'undefined' && module.exports) {
 }
 ```
 
+For best practices we apply Immediately-invoked function expression (IIEF) and crossing the external dependencies into the scope.
 
-Por boas práticas vamos aplicar o Immediately-invoked function expression (IIFE) e passar as dependências externas para dentro do escopo.
+_Por boas práticas vamos aplicar o Immediately-invoked function expression (IIFE) e passar as dependências externas para dentro do escopo._
 
 ```js
 (function (_) {
 	'use strict';
 ```
 
-Agora criamos o construtor de nossa classe com regras padrões e extendemos todas propriedades quando houver opções
+Now we create the constructor of our class with the rules and standards, and extend all option properties
+
+_Agora criamos o construtor de nossa classe com as regras e padrões, além de extendemos todas propriedades para quando houverem opções_
 
 ```js
 var Commission = function (options) {
@@ -271,7 +279,9 @@ var Commission = function (options) {
 };
 ```
 
-Lógica para o cálculo das comissões baseada nos ranges
+Logic for calculating commissions based on ranges
+
+_Lógica para o cálculo das comissões baseada nos ranges_
 
 ```js 
 function calc(arg) {
@@ -315,7 +325,9 @@ function sub(value) {
 }
 ```
 
-Exportando API da nossa classe
+Exporting the API of our class
+
+_Exportando API da nossa classe_
 
 ```js
 Commission.prototype.calc = calc;
@@ -334,8 +346,9 @@ else {
     window.Commission = Commission;
 }
 ```
+Now that our lib is ready, let's run the test with the command
 
-Agora que nossa lib está pronta para rodar, vamos executar o teste com o comando
+_Agora que nossa lib está pronta para rodar, vamos executar o teste com o comando_
 
 ```
 mocha commission.spec.js
@@ -343,9 +356,13 @@ mocha commission.spec.js
 
 <img src="http://i.imgur.com/v02PyUf.png">
 
-Tá bom stewones, mas e o angular? aonde entra ele nesta história?
+####Stewones okay, but what about the angular? where he goes in this story?
 
-Bom agora é muito fácil, basta criar nosso serviço em angular separadamente retornando a classe que está anexada ao objeto window e ser feliz.
+Well now it's very easy , just create the angular service separately, then return the class that is attached to the window object.
+
+####_Tá bom stewones, mas e o angular? aonde ele entra nesta história?_
+
+_Bom agora é muito fácil, basta criar nosso serviço em angular separadamente retornando a classe que está anexada ao objeto window e ser feliz._
 
 ```js
 (function () {
@@ -359,14 +376,18 @@ Bom agora é muito fácil, basta criar nosso serviço em angular separadamente r
 
 <img src="http://i.imgur.com/TUB57Xl.png">
 
-Segue um exemplo em funcionamento
+Working sample. _Eexemplo em funcionamento._
 
 <iframe width="100%" height="300" src="//jsfiddle.net/stewones/8an2hwyn/61/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <br />
 
-Espero ter ajudado de alguma forma e ter esclarecido um pouco sobre testes unitários. Se tiverem alguma dúvida, só largar um comentário ai embaixo.
+I hope to have clarified a little bit about unit testing and that this helps in some way. If you have any questions, just drop a comment.
+
+_Espero ter ajudado de alguma forma e ter esclarecido um pouco sobre testes unitários. Se tiverem alguma dúvida, só largar um comentário ai embaixo._
 
 Cya [=
 
-Repositório deste post no Github: https://github.com/stewones/angular-mocha-service-tdd
+Repository of this post in Github: https://github.com/stewones/angular-mocha-service-tdd
+
+_Repositório deste post no Github: https://github.com/stewones/angular-mocha-service-tdd_
