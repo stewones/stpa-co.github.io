@@ -10,7 +10,6 @@ image: false
 comments: true
 description: Today i am excited to talk about service unit test with mocha.js. Our service should work within the node and also in browser through the same code.
 ---
-[Versão em português](http://stpa.co/angularjs/mocha/2016/01/22/angular-mocha-service-tdd-pt.html)
 
 Hello devs,
 
