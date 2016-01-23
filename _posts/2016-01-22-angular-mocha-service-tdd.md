@@ -15,7 +15,7 @@ Olá
 
 Hoje estou inspirado pra falar sobre teste unitário de serviço utilizando mocha.js. Nosso serviço deverá trabalhar dentro do node e no browser através do mesmo código. Irei escrever este post em PT/EN pra tentar alcançar o maior número de pessoas possíveis. Caso dê certo posso continuar a escrever assim =D
 
-Acredito que você já deve ter ouvido falar sobre desenvolvimento dirigido por testes ou TDD. Caso você vive se perguntando pra que serve teste unitário e não faz a mínima ideia por onde começar, me acompanhe neste post.
+Acredito que você já deve ter ouvido falar sobre desenvolvimento dirigido por testes ou TDD. Caso você vive se perguntando pra que serve esse diabo de teste unitário e não faz a mínima ideia por onde começar, me acompanhe neste post.
 
 ### O básico
 Node e npm instalados. Para este post vou usar o node 0.12.7 e npm 2.11.3 - meu ambiente de desenvolvimento atual é o windows.
@@ -329,7 +329,7 @@ Segue um exemplo em funcionamento
 
 <br />
 
-Espero ter ajudado de alguma forma e que tenham gostado da técnica que utilizei aqui. Se tiverem alguma dúvida, só largar um comentário ai embaixo.
+Espero ter ajudado de alguma forma e ter esclarecido um pouco sobre testes unitários. Se tiverem alguma dúvida, só largar um comentário ai embaixo.
 
 Cya [=
 
