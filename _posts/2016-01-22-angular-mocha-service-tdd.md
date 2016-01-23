@@ -3,8 +3,8 @@ layout: post
 title:  "Unit test for service with Mocha.js and Angular.js"
 subtitle: ""
 date:   2016-01-22
-categories: [angularjs, karma]
-tags: [angularjs, karma]
+categories: [angularjs, mocha]
+tags: [angularjs, mocha]
 featured: false
 image: false
 comments: true
