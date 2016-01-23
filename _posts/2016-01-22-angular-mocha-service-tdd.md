@@ -11,11 +11,13 @@ comments: true
 description: 
 ---
 
-Olá
+Olá devs,
 
 Hoje estou inspirado pra falar sobre teste unitário de serviço utilizando mocha.js. Nosso serviço deverá trabalhar dentro do node e no browser através do mesmo código. Irei escrever este post em PT/EN pra tentar alcançar o maior número de pessoas possíveis. Caso dê certo posso continuar a escrever assim =D
 
-Acredito que você já deve ter ouvido falar sobre desenvolvimento dirigido por testes ou TDD. Caso você vive se perguntando pra que serve esse diabo de teste unitário e não faz a mínima ideia por onde começar, me acompanhe neste post.
+_Hello devs,_
+
+_Today i am excited to talk about service unit test with mocha.js. Our service should work within the node and also in browser through the same code. I will write this post in PT/EN to try to reach as many people as possible. If goes well I can keep writing in this format =D_
 
 ### O básico
 Node e npm instalados. Para este post vou usar o node 0.12.7 e npm 2.11.3 - meu ambiente de desenvolvimento atual é o windows.
@@ -55,7 +57,7 @@ npm install expect.js --save
 ```
 <br />
 
-### The test
+### The spec
 Criando o arquivo de teste
 
 ```
