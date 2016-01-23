@@ -8,13 +8,13 @@ tags: [angularjs, mocha]
 featured: false
 image: false
 comments: true
-description: 
+description: Today i am excited to talk about service unit test with mocha.js. Our service should work within the node and also in browser through the same code.
 ---
 [Versão em português](http://stpa.co/angularjs/mocha/2016/01/22/angular-mocha-service-tdd-pt.html)
 
 Hello devs,
 
-Today i am excited to talk about service unit test with mocha.js. Our service should work within the node and also in browser through the same code. I will write this post in EN/PT to try to reach as many people as possible. If goes well I can keep writing in this format =D
+Today i am excited to talk about service unit test with mocha.js. Our service should work within the node and also in browser through the same code.
 
 ### The basics
 Node and npm installed. For this post I will use the node 0.12.7 and npm 2.11.3 - my current development environment is windows.
