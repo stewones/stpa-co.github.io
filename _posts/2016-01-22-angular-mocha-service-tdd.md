@@ -74,7 +74,7 @@ Agora vamos iniciar nosso teste descrevendo do que se trata, que neste caso é o
 describe('Commission Service', function() {
 ```
 
-O próximo passo é definir duas variáveis pra mockar, ou seja, representar um ambiente real dentro do ambiente de testes. A primeira é uma array que vai armazenar as regras que nossos planos deverão respeitar. A segunda outra array formada por valor e quantidade, originada de um possível pedido.
+O próximo passo é definir duas variáveis pra mockar as situações, ou seja, representar o cenário real dentro do ambiente de testes. A primeira é uma array que vai armazenar as regras que nossos planos deverão respeitar. A segunda outra array formada por valor e quantidade, originada de um possível pedido.
 
 ```js
 var _rules = [{
