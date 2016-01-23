@@ -11,48 +11,70 @@ comments: true
 description: 
 ---
 
-Olá devs,
+Hello devs,
 
-Hoje estou inspirado pra falar sobre teste unitário de serviço utilizando mocha.js. Nosso serviço deverá trabalhar dentro do node e no browser através do mesmo código. Irei escrever este post em PT/EN pra tentar alcançar o maior número de pessoas possíveis. Caso dê certo posso continuar a escrever assim =D
+Today i am excited to talk about service unit test with mocha.js. Our service should work within the node and also in browser through the same code. I will write this post in EN/PT to try to reach as many people as possible. If goes well I can keep writing in this format =D
 
-_Hello devs,_
+_Olá devs,_
 
-_Today i am excited to talk about service unit test with mocha.js. Our service should work within the node and also in browser through the same code. I will write this post in PT/EN to try to reach as many people as possible. If goes well I can keep writing in this format =D_
+_Hoje estou inspirado pra falar sobre teste unitário de serviço utilizando mocha.js. Nosso serviço deverá trabalhar dentro do node e no browser através do mesmo código. Irei escrever este post em EN/PT pra tentar alcançar o maior número de pessoas possíveis. Caso dê certo posso continuar a escrever assim =D_
 
 ### The basics
-Node e npm instalados. Para este post vou usar o node 0.12.7 e npm 2.11.3 - meu ambiente de desenvolvimento atual é o windows.
+Node and npm installed. For this post I will use the node 0.12.7 and npm 2.11.3 - my current development environment is windows.
 
-_Node and npm installed. For this post I will use the node 0.12.7 and npm 2.11.3 - my current development environment is windows._
+_Node e npm instalados. Para este post vou usar o node 0.12.7 e npm 2.11.3 - meu ambiente de desenvolvimento atual é o windows._
+
 
 ### Intro
-Mocha é uma framework javascript para testes, que roda no node.js e no browser. Ele é simples, flexível e divertido.
+Mocha is a javascript framework for testing, which runs on node.js and browser. It is simple, flexible and fun.
+
+_Mocha é uma framework javascript para testes, que roda no node.js e no browser. Ele é simples, flexível e divertido._
 
 <img src="http://i.imgur.com/AxA93C2.jpg">
 
-haha, é isto que dizem, e concordo plenamente. Tirado da própria [doc deles](https://github.com/mochajs/mocha).
+haha , that's what they say, and I agree fully. Taken from their [own doc](https://github.com/mochajs/mocha).
+
+_haha, é isto que dizem, e concordo plenamente. Tirado da própria [doc deles](https://github.com/mochajs/mocha)._
 
 > Mocha is a simple, flexible, fun JavaScript test framework for node.js and the browser. For more information view the documentation.
 
 ### The Goal
-Ok, para entendermos melhor como tudo isso funciona, vamos imaginar um cenário real onde nosso site irá oferece determinados tipos de serviços, a partir de planos de negócio formados por valor e quantidade. Este site possui um sistema de afiliados e iremos escrever um simples serviço que irá nos calcular uma regra de comissão, para remunerar os usuários que fizerem indicações.
 
-Os requisitos seriam:
-- Receber 3 regras compostas por: range de cobertura (min/max), porcentagem e valor fixo;
-- Aplicar a regra de comissão em cima de um valor único ou em um array de pedido;
-- Imprimir o resultado final com 2 informações: total da comissão, total líquido (valor após aplicada regra).
+To better understand how all this works, let's imagine a common scenario where our website will provide certain types of services, it will have business plans that consist of value and quantity. This site has an affiliate system and we will write a simple service that calculates the commission based on the rules, to reward the users.
+
+_Para entendermos melhor como tudo isso funciona, vamos imaginar um cenário comum onde nosso site irá oferece determinados tipos de serviços, a partir de planos de negócio formados por valor e quantidade. Este site possui um sistema de afiliados e iremos escrever um simples serviço que irá nos calcular uma regra de comissão, para remunerar os usuários que fizerem indicações._
+
+The requirements are:
+
+- Receive three rules that consist of: coverage range (min/max), percentage and fixed amount;
+- Apply the commission rule on a single value or in array of orders;
+- Print the final result with 2 information: total of commission and total liquid (after applied).
+
+_Os requisitos seriam:_
+
+- _Receber 3 regras compostas por: range de cobertura (min/max), porcentagem e valor fixo;_
+- _Aplicar a regra de comissão em cima de um valor único ou em um array de pedido;_
+- _Imprimir o resultado final com 2 informações: total da comissão e total líquido (valor após aplicada regra)._
 
 ### Hands on
-Para começar vamos escrever primeiramente o teste unitário, cujo serviço em angular deverá respeitar. Lembrando que este serviço terá de atender tanto no browser quanto no node, evitando assim códigos duplicados. Imagine se tudo que você fizer no angular, tiver que repetir no node em ?
+
+To begin we will first write unit testing, whose service in angular must respect. Remembering that this service has to meet both the browser and in the node, thus avoiding duplicate codes. Imagine if all you do in angular, you have to repeat in node?
+
+_Para começar vamos escrever primeiramente o teste unitário, cujo serviço em angular deverá respeitar. Lembrando que este serviço terá de atender tanto no browser quanto no node, evitando assim códigos duplicados. Imagine se tudo que você fizer no angular, tiver que repetir no node em?_
 
 <img src="http://i.imgur.com/43PGbLW.jpg">
 
-Então vamos começar instalando o mocha de maneira global
+So let's start installing mocha globally
+
+_Então vamos começar instalando o mocha de maneira global_
 
 ```
 npm install -g mocha
 ```
 
-Vamos instalar também o `expect.js` que é um framework minimalistico de afirmação (assertion).
+We will also install `expect.js` which is a minimalistic framework for assertion.
+
+_Vamos instalar também o `expect.js` que é um framework minimalistico de afirmação._
 
 ```
 npm install expect.js --save
@@ -60,25 +82,34 @@ npm install expect.js --save
 <br />
 
 ### The spec
-Criando o arquivo de teste
+
+Creating the test file
+
+_Criando o arquivo de teste_
 
 ```
 touch commission.spec.js
 ```
-Requerendo as dependencias
+
+Requiring the dependencies
+
+_Requerendo as dependencias_
 
 ```js
 var expect = require("expect.js"); //to assertion
 var Commission = require("./Commission"); //our future lib
 ```
+Now let's start our test describing what it is , which in this case is the "Commission Service". This will appear as a "title" in terminal log when we execute.
 
-Agora vamos iniciar nosso teste descrevendo do que se trata, que neste caso é o "serviço de comissão". Isto aparecerá como um "título" na saída do terminal quando o executarmos.
+_Agora vamos iniciar nosso teste descrevendo do que se trata, que neste caso é o "Serviço de Comissão". Isto aparecerá como um "título" na saída do terminal quando o executarmos._
 
 ```js
 describe('Commission Service', function() {
 ```
 
-O próximo passo é definir duas variáveis pra mockar as situações, ou seja, representar o cenário real dentro do ambiente de testes. A primeira é uma array que vai armazenar as regras que nossos planos deverão respeitar. A segunda outra array formada por valor e quantidade, originada de um possível pedido.
+The next step is define two variables to mock situations. The first is an array that will store the rules that our plans must comply. The second array is formed by value (price) and quantity, which may have been originated by an order.
+
+_O próximo passo é definir duas variáveis pra mockar as situações, ou seja, representar o cenário real dentro do ambiente de testes. A primeira é uma array que vai armazenar as regras que nossos planos deverão respeitar. A segunda outra array formada por valor (preço) e quantidade, originada de um possível pedido._
 
 ```js
 var _rules = [{
@@ -124,8 +155,9 @@ var _order = [{
     qty: 3
 }];
 ```
+Now we instantiate our service commission with options to meet the requirements and start writing tests.
 
-Agora vamos instânciar nosso serviço de comissão passando as regras como opção para atender aos requisitos e escrever os testes.
+_Agora vamos instânciar nosso serviço de comissão passando as regras como opção para atender aos requisitos e escrever os testes._
 
 ```js
 var commission = new Commission({
@@ -133,7 +165,8 @@ var commission = new Commission({
 });
 ```
 
-Primeiro requesito
+First requirement
+_Primeiro requesito_
 
 ```js
 it('Should have three rules composed with range, percent and fixed value', function() {
