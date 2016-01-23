@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Unit test for service with Angular 1.x and Mocha"
+title:  "Unit test for service with Mocha.js and Angular.js"
 subtitle: ""
 date:   2016-01-22
 categories: [angularjs, karma]
@@ -21,7 +21,6 @@ Acredito que você já deve ter ouvido falar sobre desenvolvimento dirigido por 
 Node e npm instalados. Para este post vou usar o node 0.12.7 e npm 2.11.3 - meu ambiente de desenvolvimento atual é o windows.
 
 ### Intro
-
 Mocha é uma framework javascript para testes, que roda no node.js e no browser. Ele é simples, flexível e divertido.
 
 <img src="http://data7.lustich.de/bilder/l/29185-really-dog.jpg">
@@ -33,7 +32,6 @@ Mocha is a simple, flexible, fun JavaScript test framework for node.js and the b
 ```
 
 ### The Goal
-
 Ok, para entendermos melhor como tudo isso funciona, vamos imaginar um cenário real onde nosso site irá oferece determinados tipos de serviços, a partir de planos de negócio formados por valor e quantidade. Este site possui um sistema de afiliados e iremos escrever um simples serviço que irá nos calcular uma regra de comissão, para remunerar os usuários que fizerem indicações.
 
 Os requisitos seriam:
@@ -42,28 +40,28 @@ Os requisitos seriam:
 - Imprimir o resultado final com 2 informações: total da comissão, total líquido (valor após aplicada regra).
 
 ### Hands on
-
 Para começar vamos escrever primeiramente o teste unitário, cujo serviço em angular deverá respeitar. Lembrando que este serviço terá de atender tanto no browser quanto no node, evitando assim códigos duplicados. Imagine se tudo que você fizer no angular, tiver que repetir no node em ?
 
 <img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/173/576/Wat8.jpg?1315930535">
 
 Então vamos começar instalando o mocha de maneira global
+
 ```
 npm install -g mocha
 ```
 
 Vamos instalar também o `expect.js` que é um framework minimalistico de afirmação (assertion).
+
 ```
 npm install expect.js --save
 ```
 
-
 ### The test
 Criando o arquivo de teste
-```sh
+
+```
 touch commission.spec.js
 ```
-
 Requerendo as dependencias
 
 ```js
@@ -71,10 +69,9 @@ var expect = require("expect.js"); //to assertion
 var Commission = require("./Commission"); //our future lib
 ```
 
-
 Agora vamos iniciar nosso teste descrevendo do que se trata, que neste caso é o "serviço de comissão". Isto aparecerá como um "título" na saída do terminal quando o executarmos.
 
-```
+```js
 describe('Commission Service', function() {
 ```
 
@@ -126,12 +123,15 @@ var _order = [{
 ```
 
 Agora vamos instânciar nosso serviço de comissão passando as regras como opção para atender aos requisitos e escrever os testes.
+
 ```js
 var commission = new Commission({
     rules: _rules
 });
 ```
+
 Primeiro requesito
+
 ```js
 it('Should have three rules composed with range, percent and fixed value', function() {
 	expect(commission.rules).to.eql(_rules);
@@ -139,6 +139,7 @@ it('Should have three rules composed with range, percent and fixed value', funct
 ``` 
 
 Segundo requesito
+
 ```js
 it('Should apply rule on specific value', function() {
     expect(commission.calc(60)).to.eql({
@@ -154,7 +155,9 @@ it('Should apply rule on multiple plans', function() {
     });
 });
 ``` 
+
 Terceiro requesito
+
 ```js
 it('Should print specific information about calc', function () {
     expect(commission.calc(60)).to.eql({
@@ -172,13 +175,15 @@ Agora vamos trabalhar o serviço (lib, ou classe) da comissão. Lembrando que o 
 <img src="http://meme4fun.com/images/82fe3851-c357-448b-b47b-94b045dfe850.jpg">
 
 Precisaremos de uma outra pequena lib chamada `lodash` para efetuar algumas operações.
-```shell
+
+```
 npm install lodash --save
 touch commission.js
 ```
 
 Requerendo dependências para quando a classe estiver sendo rodada pelo node
-```
+
+```js
 //
 // Requires dependencies for node
 //
@@ -187,7 +192,7 @@ if (typeof module !== 'undefined' && module.exports) {
 }
 ```
 
-```
+
 Por boas práticas vamos aplicar o Immediately-invoked function expression (IIFE) e passar as dependências externas para dentro do escopo.
 
 ```js
@@ -196,6 +201,7 @@ Por boas práticas vamos aplicar o Immediately-invoked function expression (IIFE
 ```
 
 Criar o construtor de nossa classe com regras padrões e extender quando houver opções
+
 ```js
 var Commission = function (options) {
     var _ = window.lodash ? window.lodash : require('lodash');
@@ -227,7 +233,9 @@ var Commission = function (options) {
     _.merge(this, options);
 };
 ```
+
 Lógica para o cálculo das comissões baseadas em range de valor
+
 ```js 
 function calc(arg) {
     var _ = window.lodash ? window.lodash : require('lodash');
@@ -271,6 +279,7 @@ function sub(value) {
 ```
 
 Exportando API da nossa classe
+
 ```js
 Commission.prototype.calc = calc;
 Commission.prototype.sub = sub;
@@ -288,6 +297,7 @@ else {
     window.Commission = Commission;
 }
 ```
+
 Agora que nossa lib está pronta para rodar, vamos executar o teste com o comando `mocha commission.spec.js`
 
 <img src="http://i.imgur.com/v02PyUf.png">
@@ -305,6 +315,7 @@ Bom agora é muito fácil, basta criar nosso serviço em angular separadamente r
         })
 })();
 ```
+
 <img src="http://i.imgur.com/TUB57Xl.png">
 
 Segue um exemplo em funcionamento
