@@ -1,5 +1,5 @@
 ---
-layout: page,
+layout: post,
 title:  "Many Thanks",
 subtitle: "",
 comments: true
