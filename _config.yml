@@ -1,12 +1,18 @@
 # Build settings
 markdown: redcarpet
+
+encoding: utf-8
+
 highlighter: pygments
 
 redcarpet:
   extensions: [ "with_toc_data", "xhtml", "autolink" ]
 
+paginate: 5
+
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 
 # Site settings
 title: "Stewan Pacheco"
@@ -26,8 +32,6 @@ author: 'Stewan Pacheco'
 author_image: "https://graph.facebook.com/100002253653400/picture?width=115&height=115"
 author_bio: >
   Graduating Bachelor of Computer Science, full stack web developer and Javascript lover.
-
-paginate: 5
 
 #url: "http://127.0.0.1:4000"
 url: "http://stpa.co" # the base hostname & protocol for your site
