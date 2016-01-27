@@ -5,7 +5,7 @@ subtitle: "Parte 3: Conheça o CloudFlare"
 date:   2014-12-22
 categories: [github, jekyll, cloudflare]
 tags: [featured, github, jekyll, cloudflare]
-featured: true
+featured: false
 image: /assets/images_articles/sirva-seu-blog-com-github-pages-like-a-kyller/post-jekyll-e-github-pages-cloudflare.jpg
 comments: true
 description: CloudFlare é uma plataforma como serviço (SAAS) que age como um proxy entre o visitante e o servidor, dando mais velocidade e segurança ao site.

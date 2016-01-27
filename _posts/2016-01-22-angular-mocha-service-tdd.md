@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Unit test for service with Mocha.js and Angular.js"
-subtitle: ""
+title:  "How to unit test service with Mocha.js and Angular.js"
+subtitle: "Simple guide for understand unit test easier"
 date:   2016-01-22
 categories: [angularjs, mocha]
-tags: [angularjs, mocha]
-featured: false
+tags: [angularjs, mocha, unit test, tdd]
+featured: true
 image: false
 comments: true
-description: Today i am excited to talk about service unit test with mocha.js. Our service should work within the node and also in browser through the same code.
+description: Today i am excited to talk about service unit test with mocha.js. For this post our service should be able work within the node and also in browser through the same code.
 ---
 
 Hello devs,
 
-Today i am excited to talk about service unit test with mocha.js. Our service should work within the node and also in browser through the same code.
+Today i am excited to talk about service unit test with mocha.js. For this post our service should be able to work within the node and also in browser through the same code.
 
 ### The basics
 Node and npm installed. For this post I will use the node 0.12.7 and npm 2.11.3 - my current development environment is windows.

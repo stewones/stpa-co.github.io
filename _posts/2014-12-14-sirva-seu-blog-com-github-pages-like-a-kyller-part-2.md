@@ -5,7 +5,7 @@ subtitle: "Parte 2: O que é Jekyll? Entenda como funciona"
 date:   2014-12-14
 categories: [github, jekyll]
 tags: [featured, github, jekyll]
-featured: true
+featured: false
 image: /assets/images_articles/sirva-seu-blog-com-github-pages-like-a-kyller/post-jekyll-e-github-pages.jpg
 comments: true
 description: Jekyll é um parser engine distribuído como um gem do Ruby. Ele é utilizado para gerar websites estáticos, através de componentes como templates, partials, liquid, markdown, entre outros.

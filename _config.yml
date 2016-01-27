@@ -1,7 +1,11 @@
 # Build settings
-markdown: redcarpet
 
 encoding: utf-8
+
+#url: "http://localhost:4000"
+url: "http://stpa.co" # the base hostname & protocol for your site
+
+markdown: redcarpet
 
 highlighter: pygments
 
@@ -33,8 +37,6 @@ author_image: "https://graph.facebook.com/100002253653400/picture?width=115&heig
 author_bio: >
   Graduating Bachelor of Computer Science, full stack developer and web evangelist.
 
-url: "http://localhost:4000"
-#url: "http://stpa.co" # the base hostname & protocol for your site
 excerpt_separator: "<!-- more -->"
 
 comments: true

@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Teste unitário de serviço com Mocha.js e Angular.js"
-subtitle: ""
+title:  "Como realizar teste unitário de serviço com Mocha.js e Angular.js"
+subtitle: "Guia simples para entendimento sobre testes unitários"
 date:   2016-01-22
 categories: [angularjs, mocha]
-tags: [angularjs, mocha]
-featured: false
+tags: [angularjs, mocha, unit test, tdd]
+featured: true
 image: false
 comments: true
-description: Hoje estou inspirado pra falar sobre teste unitário de serviço utilizando mocha.js. Nosso serviço deverá trabalhar dentro do node e no browser através do mesmo código.
+description: Hoje estou inspirado pra falar sobre teste unitário de serviço utilizando mocha.js. Para este post nosso serviço deverá ser capaz de trabalhar dentro do node e no browser através do mesmo código.
 ---
 
 Olá devs,
 
-Hoje estou inspirado pra falar sobre teste unitário de serviço utilizando mocha.js. Nosso serviço deverá trabalhar dentro do node e no browser através do mesmo código.
+Hoje estou inspirado pra falar sobre teste unitário de serviço utilizando mocha.js. Para este post nosso serviço deverá ser capaz de trabalhar dentro do node e no browser através do mesmo código.
 
 ### O Básico
 Node e npm instalados. Para este post vou usar o node 0.12.7 e npm 2.11.3 - meu ambiente de desenvolvimento atual é o windows.
