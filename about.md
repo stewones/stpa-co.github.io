@@ -18,7 +18,7 @@ _Oi, meu nome é Stewan. Sou brasileiro e atualmente curso Ciências da Computa�
 
 _Nerd por natureza, neste tempo já desenvolvi vários sites, ecommerces, blogs, MVP´s entre outros. Alguns destes projetos [compartilho aqui](/projects). Utilizava diversas tecnologias e linguagens, mas hoje em dia, o que gosto mesmo é do JavaScript._
 
-_Simplesmente pelo fato de se poder fazer tudo com a mesma linguagem, desde frontend ao backend e banco de dados. Tudo de maneira rápida, escalável, alta performance e de fácil manutenção._
+_Simplesmente pelo fato de se poder fazer tudo com a mesma linguagem, desde frontend ao backend e banco de dados. Tudo de maneira rápida, escalável, com alta performance e de fácil manutenção._
 
 _Apaixonado por código livre tentarei ao máximo compartilhar de todo meu [conhecimento aqui](/)._
 ___
