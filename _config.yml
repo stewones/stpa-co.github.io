@@ -6,7 +6,7 @@ encoding: utf-8
 highlighter: pygments
 
 redcarpet:
-  extensions: [ "with_toc_data", "xhtml", "autolink" ]
+  extensions: [ "with_toc_data", "xhtml", "autolink", "no_intra_emphasis", "fenced_code_blocks", "tables" ]
 
 paginate: 5
 
@@ -17,7 +17,7 @@ gems:
 # Site settings
 title: "Stewan Pacheco"
 description: > # this means to ignore newlines until "email:"
-  Graduating BCS, full stack web developer and Javascript lover.
+  Graduating BCS, full stack developer and web evangelist.
 
 email: talk@stpa.co
 #blog logos
@@ -31,10 +31,10 @@ name: 'Stewan P.'
 author: 'Stewan Pacheco'
 author_image: "https://graph.facebook.com/100002253653400/picture?width=115&height=115"
 author_bio: >
-  Graduating Bachelor of Computer Science, full stack web developer and Javascript lover.
+  Graduating Bachelor of Computer Science, full stack developer and web evangelist.
 
-#url: "http://127.0.0.1:4000"
-url: "http://stpa.co" # the base hostname & protocol for your site
+url: "http://localhost:4000"
+#url: "http://stpa.co" # the base hostname & protocol for your site
 excerpt_separator: "<!-- more -->"
 
 comments: true
