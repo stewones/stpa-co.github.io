@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Módulo angular-morris-chart conquista 100 estrelas no Github"
+subtitle: ""
+date:   2016-01-27
+categories: [angularjs]
+tags: [angularjs, morrisjs, charts]
+featured: false
+image: false
+comments: true
+description: 
+---
+
+Há exatos 24 dias atrás (em 03/01/2016), o projeto `angular-morris-chart` que começei quase 1 ano antes, completou 100 stars no [Github](https://github.com/stewones/angular-morris-chart).
+Na verdade hoje ele já tem 117 \o/. Depois da [release 1.2.0](https://github.com/stewones/angular-morris-chart/releases/tag/1.2.0) que lancei recentemente com a [ajuda da comunidade](https://github.com/stewones/angular-morris-chart/graphs/contributors), este número só vem crescendo cada vez mais.
+Para muitos isso pode parecer pouco, mas pra mim este resultado significa bastante. Além de estar sendo um grande aprendizado, poder gerir e contribuir com um projeto desses.
+
+
+Na época em que fiz o primeiro commit, desenvolvia algumas aplicações internas para a última empresa em que trabalhei, utilizando [Morris](http://morrisjs.github.io/morris.js/) e estava começando a trabalhar com angular.
+Queria lançar algo legal e útil para nós dentro da empresa, mas pensei que este módulo poderia ser aberto para que pessoas de todo o mundo também pudessem utilizar e contribuir.
+
+
+A idéia inicial do projeto era cobrir apenas algumas funcionalidades padrões do Morris, que é uma ótima biblioteca para criar gráficos em svg.
+Mas com o passar do tempo as pessoas foram solicitando cada vez mais recursos, me fazendo dar maior atenção ao projeto.
+
+
+Isso valeu muito a pena.
+
+---
+
+### Exemplo em funcionamento
+
+<iframe width="100%" height="510" src="//jsfiddle.net/stewones/n6aaLckb/embedded/result,html,js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<br />
+
+Se você curtiu a idéia e gostaria de contribuir, faça um [fork](https://github.com/stewones/angular-morris-chart) e nos ajude nesta batalha (=
