@@ -35,4 +35,13 @@ It was worth. Today the project has 117 stars, 41 forks, 76 commits, 5 releases 
 - Module documentation: [http://angular-morris-chart.stpa.co/](http://angular-morris-chart.stpa.co/)
 - Morris documentation: [http://morrisjs.github.io/morris.js/](http://morrisjs.github.io/morris.js/)
 
-[Post em português](/angularjs/2016/01/27/angular-morris-chart-conquista-100-stars-no-github.html)
+## Top Contributors
+
+[<img alt="stewones" src="https://avatars.githubusercontent.com/u/719763?v=3&s=117" width="117">](https://github.com/stewones) |[<img alt="venkatramachandran" src="https://avatars.githubusercontent.com/u/4744258?v=3&s=117" width="117">](https://github.com/venkatramachandran) |[<img alt="rolaveric" src="https://avatars.githubusercontent.com/u/960670?v=3&s=117" width="117">](https://github.com/rolaveric) |
+:---: |:---: |:---: |
+
+---
+
+- [Post em português](/angularjs/2016/01/27/angular-morris-chart-conquista-100-stars-no-github.html)
+
+---

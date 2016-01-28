@@ -139,7 +139,7 @@
         {% endif %}
         <div class="bottom-teaser cf">
             <div class="isLeft">
-                <h5 class="index-headline featured"><span>Escrito por</span></h5>
+                <h5 class="index-headline featured"><span>Written by</span></h5>
                 <section class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
                     <div class="author-image" style="background-image: url({{site.author_image}})"><img itemprop="image" src="{{ site.author_image }}" style="display:none;"></div>
                     <h4 itemprop="name">{{ site.author }}</h4>
@@ -149,12 +149,15 @@
                     </p>
                     {% include socialite.html %}
                 </section>
+                  <br />
+                  <br /><br />
+                 {% include ads.html %}
             </div>
             {{/post}}
             <div class="isRight">
-                <h5 class="index-headline featured"><span>Leia também</span></h5>
+                <h5 class="index-headline featured"><span>Also read</span></h5>
                 <div class="related">
-                    {% for post in site.related_posts limit:1 %}
+                    {% for post in site.related_posts limit:5 %}
                     <article class="post">
                     <div class="article-item">
                         <header class="post-header">

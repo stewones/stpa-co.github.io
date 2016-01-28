@@ -337,5 +337,8 @@ Cya [=
 
 Repositório deste post no Github: https://github.com/stewones/angular-mocha-service-tdd
 
+---
 
-[English version](http://stpa.co/angularjs/mocha/2016/01/22/angular-mocha-service-tdd.html)
+- [English version](http://stpa.co/angularjs/mocha/2016/01/22/angular-mocha-service-tdd.html)
+
+---
