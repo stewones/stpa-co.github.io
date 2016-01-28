@@ -16,7 +16,7 @@ Na verdade hoje ele já tem 117 \o/. Depois da [release 1.2.0](https://github.co
 Para muitos isso pode parecer pouco, mas pra mim este resultado significa bastante, além de estar sendo um grande aprendizado, poder gerir e contribuir com um projeto desses.
 
 
-Na época em que fiz o primeiro commit, desenvolvia algumas aplicações internas para a última empresa em que trabalhei, utilizando [Morris](http://morrisjs.github.io/morris.js/) e estava começando a trabalhar com angular.
+Quando fiz o primeiro commit, desenvolvia algumas aplicações internas para a última empresa em que trabalhei, utilizando [Morris](http://morrisjs.github.io/morris.js/).
 Queria lançar algo legal e útil para nós dentro da empresa, mas pensei que este módulo poderia ser aberto para que pessoas de todo o mundo também pudessem utilizar e contribuir.
 
 
