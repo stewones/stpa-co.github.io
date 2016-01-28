@@ -15,8 +15,8 @@ There are exactly 24 days ago (at 03/01/2016), the project `angular-morris-chart
 In fact it already has 117 \o/. After [1.2.0 version](https://github.com/stewones/angular-morris-chart/releases/tag/1.2.0) released with [community help](https://github.com/stewones/angular-morris-chart/graphs/contributors), this number is growing increasingly.
 For many people this may seem little, but for me this result means a lot, besides being a great learning experience be able to manage and contribute to a project like this.
 
-When i made the first commit was developing some internal applications to the last company i worked, using [Morris](http://morrisjs.github.io/morris.js/) and was beginning to work with Angular.
-I wanted to release something nice and helpful to us within the company, but I thought that this module could be opened so that people around the world could also use and contribute. 
+When i made the first commit, i was developing with [Morris](http://morrisjs.github.io/morris.js/) on some internal applications to the last company that i worked.
+I wanted release something nice and helpful to us within the company, but also thought that this could be opened to all so many people around the world could use and contribute. 
 
 The initial idea was to cover only certain features of Morris, which is a great library to create SVG graphics.
 But over the time people were asking for more and more features, making me pay more attention to the project.
