@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "5 erros de padrão ao desenvolver com Angular.js"
-subtitle: ""
+subtitle: "Dicas para iniciantes em Angular"
 date:   2014-12-23
 categories: [angularjs]
 tags: [angularjs]
@@ -13,7 +13,8 @@ description: O Angular.js simplesmente não dá erro, é impressionante como voc
 
 Quando realmente comecei a trabalhar com Angular.js, achava incrível a capacidade de escrever qualquer coisa, resolver qualquer problema, sem muitos erros durante a fase de prototipação. O Angular simplesmente não dá erro, é impressionante como você pode escrever um verdadeiro spaguetti.js que tudo funciona, em termos.
 
-O problema do macarrão.js está na fase em que você precisa crescer seu code, imagina um sistema CRM com várias rotas, módulos, diretivas, services, etc.. Abaixo um exemplo da organização por features, recomendada por Papa, que comentarei depois.
+O problema do macarrão.js está na fase em que você precisa crescer seu code, imagina um sistema com várias rotas, módulos, diretivas, services, etc..
+Vou mostrar abaixo um exemplo da organização por features, recomendada por um dos maiores evangelistas sobre angular do mundo, John Papa.
 
 - Login
     - app.login.js
@@ -30,26 +31,10 @@ O problema do macarrão.js está na fase em que você precisa crescer seu code, 
     - cliente.factory.js
     - cliente.service.js
     - ...etc...
-- Fornecedores
-    - app.fornecedor.js
-    - fornecedor.factory.js
-    - fornecedor.service.js
-    - ...etc...
-- Comercial
-    - app.comercial.js
-    - comercial.factory.js
-    - comercial.service.js
-    - ...etc...
-- Financeiro
-    - app.financeiro.js
-    - financeiro.factory.js
-    - financeiro.service.js
-    - ...etc...
-- ...etc...
 
-Agora imagina você tendo que evoluir, testar e dar manutenção nisso ai. Se não seguir alguns padrões de desenvolvimento, acredito que terá alguns probleminhas [=
+Além de organizar nossas pastas por features, você terá que evoluir, testar e dar manutenção. Se não seguir alguns padrões de desenvolvimento, com certeza terá alguns probleminhas [=
 
-Baseando-me no Style Guide para Angular.js escrito por [@jhonpapa](https://twitter.com/john_papa), resolvi apontar 5 erros de padrão, que na minha opnião, são os mais críticos para quem está começando com Angular.
+Baseando-me no style guide para Angular.js escrito por [@johnpapa](https://twitter.com/john_papa), resolvi apontar 5 erros de padrão, que na minha opnião, são os mais críticos para quem está começando com Angular.
 
 
 #1 - Princípio da responsabilidade única
@@ -395,5 +380,5 @@ app/
 Para quem está iniciando com Angular.js, seguir estes 5 pontos vai evitar muita dor de cabeça. Porém recomendo intensamente que leia e siga o [Style Guide](https://github.com/johnpapa/angularjs-styleguide) completo de [@jhonpapa](https://twitter.com/john_papa).
 
 Deixe seu comentário.
-
-Cheers,
+<br />
+Cya.
