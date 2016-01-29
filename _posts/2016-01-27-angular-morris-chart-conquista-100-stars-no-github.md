@@ -32,6 +32,7 @@ Isso valeu muito a pena. Hoje o projeto possui 117 stars, 41 forks, 76 commits, 
 ### Exemplo em funcionamento
 
 <iframe width="100%" height="510" src="//jsfiddle.net/stewones/n6aaLckb/embedded/result,html,js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="510" src="//jsfiddle.net/stewones/zwb207md/embedded/result,html,js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <br />
 
