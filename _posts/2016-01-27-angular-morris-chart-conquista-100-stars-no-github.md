@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Módulo angular para Morris conquista 100 estrelas no Github"
+title:  "Módulo em Angular.js para Morris.js conquista 100 estrelas no Github"
 subtitle: ""
 date:   2016-01-27
 categories: [angularjs]
