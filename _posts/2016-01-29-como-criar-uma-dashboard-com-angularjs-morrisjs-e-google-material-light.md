@@ -11,7 +11,7 @@ comments: true
 description: 
 ---
 
-O Google lançou recentemente uma ferramenta chamada Material Design Light. MDL é uma espécie de Bootstrap, onde você pode trabalhar o conceito de [Material Design](https://design.google.com/) através de seus componentes, estilos e templates. Além dele ser otimizado para uso em celulares e browsers antigos sem a necessidade de interagir com outras frameworks javascript.
+O Google lançou recentemente uma ferramenta chamada Material Design Light. Ou para muitos, apenas MDL. Se trata de uma espécie de Bootstrap, onde você pode trabalhar o conceito de [Material Design](https://design.google.com/) através de seus componentes, estilos e templates. Além dele ser otimizado para uso em celulares e browsers antigos sem a necessidade de interagir com outras frameworks javascript.
 
 > Material Design Lite lets you add a Material Design look and feel to your websites. It doesn’t rely on any JavaScript frameworks and aims to optimize for cross-device use, gracefully degrade in older browsers, and offer an experience that is immediately accessible
 
