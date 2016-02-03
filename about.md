@@ -47,6 +47,7 @@ ___
 
 If you have any question or suggestion, get in touch at [talk@stpa.co](mailto: talk@stpa.co).
 This website is open-source, fork and use it at [GitHub](https://github.com/stewones/stpa-co.github.io).
+
 ___
 
 Se você tem uma dúvida ou sugestão, entre em contato comigo pelo email [talk@stpa.co](mailto: talk@stpa.co).
