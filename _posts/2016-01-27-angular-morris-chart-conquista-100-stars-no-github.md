@@ -11,8 +11,8 @@ comments: true
 description: 
 ---
 
-Há exatos 24 dias atrás (em 03/01/2016), o projeto `angular-morris-chart` que começei quase 1 ano antes, completou 100 stars no [Github](https://github.com/stewones/angular-morris-chart).
-Na verdade hoje ele já tem 117 \o/. Depois da [release 1.2.0](https://github.com/stewones/angular-morris-chart/releases/tag/1.2.0) que lancei recentemente com a [ajuda da comunidade](https://github.com/stewones/angular-morris-chart/graphs/contributors), este número só vem crescendo cada vez mais.
+Há exatos 24 dias (em 03/01/2016), o projeto `angular-morris-chart` que comecei quase 1 ano antes, completou 100 stars no [Github](https://github.com/stewones/angular-morris-chart).
+Na verdade hoje ele já tem 117 \o/. Depois da [release 1.2.0](https://github.com/stewones/angular-morris-chart/releases/tag/1.2.0) que lancei recentemente com a [ajuda da comunidade](https://github.com/stewones/angular-morris-chart/graphs/contributors), este número só vem crescendo.
 Para muitos isso pode parecer pouco, mas pra mim este resultado significa bastante, além de estar sendo um grande aprendizado, poder gerir e contribuir com um projeto desses.
 
 
