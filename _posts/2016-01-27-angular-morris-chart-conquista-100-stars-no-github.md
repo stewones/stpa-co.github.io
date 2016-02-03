@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Módulo angular-morris-chart conquista 100 estrelas no Github"
+title:  "Módulo Angular Morris conquista 100 estrelas no Github"
 subtitle: ""
 date:   2016-01-27
 categories: [angularjs]

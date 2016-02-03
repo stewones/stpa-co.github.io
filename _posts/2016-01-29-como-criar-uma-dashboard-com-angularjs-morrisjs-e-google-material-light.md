@@ -2,7 +2,7 @@
 layout: post
 title:  "Dashboard com Angular.js, Morris.js e Google Material Light"
 subtitle: "Como criar uma simples dashboard utilizando estas tecnologias"
-date:   2016-01-27
+date:   2016-02-03
 categories: [angularjs]
 tags: [angularjs, morrisjs, charts]
 featured: false

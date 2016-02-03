@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "angular-morris-chart module reaches 100 stars at Github"
+title:  "Angular morris module reaches 100 stars at Github"
 subtitle: ""
 date:   2016-01-27
 categories: [angularjs]
