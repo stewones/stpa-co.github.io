@@ -5,9 +5,9 @@ encoding: utf-8
 #url: "http://localhost:4000"
 url: "http://stpa.co" # the base hostname & protocol for your site
 
-markdown: redcarpet
+#markdown: redcarpet
 
-highlighter: rouge
+highlighter: pygments
 
 redcarpet:
   extensions: [ "with_toc_data", "xhtml", "autolink", "no_intra_emphasis", "fenced_code_blocks", "tables" ]
