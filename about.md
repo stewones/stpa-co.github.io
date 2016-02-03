@@ -21,6 +21,7 @@ _Nerd por natureza, neste tempo já desenvolvi vários sites, ecommerces, blogs,
 _Simplesmente pelo fato de se poder fazer tudo com a mesma linguagem, desde frontend ao backend e banco de dados. Tudo de maneira rápida, escalável, com alta performance e de fácil manutenção._
 
 _Apaixonado por código livre tentarei ao máximo compartilhar de todo meu [conhecimento aqui](/)._
+
 ___
 
 ### Some of my skills
@@ -46,9 +47,7 @@ ___
 
 If you have any question or suggestion, get in touch at [talk@stpa.co](mailto: talk@stpa.co).
 This website is open-source, fork and use it at [GitHub](https://github.com/stewones/stpa-co.github.io).
-
 ___
 
-<br />
 Se você tem uma dúvida ou sugestão, entre em contato comigo pelo email [talk@stpa.co](mailto: talk@stpa.co).
 Este site é de código livre, faça uma cópia no [GitHub](https://github.com/stewones/stpa-co.github.io).
