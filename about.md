@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi, my name is Stewan.
 
-I am brazilian and started to developping before 2007, toying with HTML, CSS and with the R.I.P Flash Action Script. Nowadays coursing Computer Science in the Vila Velha University (UVV).
+I am brazilian and started to developping before 2007, toying with HTML, CSS and with the R.I.P Flash Action Script. Nowadays coursing Computer Science in the Vila Velha University (UVV), at Espírito Santo.
 
 I've done several sites, blogs, apps, ecommerce etc. Some of these i [share here](/projects). I've used multiples languages and technologies, but nowadays the one i really enjoy to work is JavaScript. Simply by the fact of you being able to do everything with the same language, and in most cases with the same code. Frontend, backend and database. All with the highest performance, scalability and easy maintenance.
 
@@ -14,7 +14,7 @@ Open source passionate i will try to share as much as possible of all my [knowle
 
 ___
 
-_Oi, meu nome é Stewan. Sou brasileiro e comecei a programar por volta de 2007, mas antes disso já brincava com HTML, CSS e o finado Flash Action Script._
+_Oi, meu nome é Stewan. Sou brasileiro e comecei a programar por volta de 2007, mas antes disso já brincava com HTML, CSS e o finado Flash Action Script. Atualmente cursando Ciências da Computação pela Universidade de Vila Velha, no Espírito Santo._
 
 _Nerd por natureza, neste tempo já desenvolvi vários sites, ecommerces, blogs, MVP´s entre outros. Alguns destes projetos [compartilho aqui](/projects). Utilizava diversas tecnologias e linguagens, mas hoje em dia, o que gosto mesmo é do JavaScript._
 
