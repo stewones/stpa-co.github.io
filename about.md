@@ -4,43 +4,21 @@ title: About
 permalink: /about/
 ---
 
-Hi, my name is Stewan.
+Hello,
 
-I am brazilian and started to developping before 2007, toying with HTML, CSS and with the R.I.P Flash Action Script. Currently coursing Computer Science in the Vila Velha University (UVV), at Espírito Santo.
+My name is Stewan. I'm a fullstack engineer that works with web since 2007. Nowadays focused only on Javascript language, I like to code web and mobile applications fully organized, scalable and testable.
 
-I've done several sites, blogs, apps, ecommerce etc. Some of these i [share here](/projects). I've used multiples languages and technologies, but nowadays the one i really enjoy to work is JavaScript. Simply by the fact of you being able to do everything with the same language, and in most cases with the same code. Frontend, backend and database. All with the highest performance, scalability and easy maintenance.
-
-Open source passionate i will try to share as much as possible of all my [knowledge here](/).
+Contact-me in talk@stpa.co or follow me at [Github](https://github.com/stewones)
 
 ___
 
-_Oi, meu nome é Stewan. Sou brasileiro e comecei a programar por volta de 2007, mas antes disso já brincava com HTML, CSS e o finado Flash Action Script. Atualmente cursando Ciências da Computação pela Universidade de Vila Velha, no Espírito Santo._
+In past years the Javascript came taking incalculable proportions, making it impossible to work without their presence. Leaving the frontend scenario, by now it is possible to develop an entire application, including backend and database, using only this fantastic language.
 
-_Nerd por natureza, neste tempo já desenvolvi vários sites, ecommerces, blogs, MVP´s entre outros. Alguns destes projetos [compartilho aqui](/projects). Utilizava diversas tecnologias e linguagens, mas hoje em dia, o que gosto mesmo é do JavaScript._
-
-_Simplesmente pelo fato de se poder fazer tudo com a mesma linguagem, desde frontend ao backend e banco de dados. Tudo de maneira rápida, escalável, com alta performance e de fácil manutenção._
-
-_Apaixonado por código livre tentarei ao máximo compartilhar de todo meu [conhecimento aqui](/)._
+Now many large companies like Google and Facebook, are heavily investing in development of tools written in Javascript. All with source opened by their Github.
 
 ___
 
-### Some of my skills
 
-
-| Backend | Frontend | 
-| -------- | -------- | 
-| PHP  | HTML/CSS |  
-| Git  | KnockoutJS  |
-| Amazon Web Services | EmberJS | 
-| CloudFlare | AngularJS | 
-| NodeJS | GulpJS | 
-| ExpressJS | Protractor.js | 
-| WordPress | Jasmine.js | 
-| Laravel | Karma.js | 
-| MySQL | Mocha.js |
-| MongoDB | Jekyll |
-| PyroCMS | Blogger Platform |
-| CodeIgniter |  |
 
 
 <br />
