@@ -21,7 +21,7 @@ gems:
 # Site settings
 title: "Stewan Pacheco"
 description: > # this means to ignore newlines until "email:"
-  Full-stack developer and web evangelist. Graduating BCS.
+  Full-stack developer and web evangelist
 
 email: talk@stpa.co
 #blog logos
