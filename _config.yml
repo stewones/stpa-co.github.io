@@ -21,7 +21,7 @@ gems:
 # Site settings
 title: "Stewan Pacheco"
 description: > # this means to ignore newlines until "email:"
-  Fullstack Engineer and Js evangelist
+  Fullstack Engineer and Js Evangelist
 
 email: talk@stpa.co
 #blog logos
@@ -35,7 +35,7 @@ name: 'Stewan P.'
 author: 'Stewan Pacheco'
 author_image: "https://graph.facebook.com/100002253653400/picture?width=115&height=115"
 author_bio: >
- Fullstack Engineer and Js evangelist.<br /> talk@stpa.co
+ Fullstack Engineer and Js Evangelist.<br /> talk@stpa.co
 
 excerpt_separator: "<!-- more -->"
 
