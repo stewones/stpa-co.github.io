@@ -1,4 +1,5 @@
 <head>
+    <meta http-equiv="refresh" content="0; url=https://st1s.io">
     <meta charset="utf-8">
     <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,100 +7,243 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }} {{ page.subtitle }}{% else %}{{ site.title }}{% endif %}</title>
     {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-    {% else %}
-    <meta name="description" content="{{ site.description }}" />
-    {% endif %}
+    <meta name="description" content="{{ page.description }}"> {% else %}
+    <meta name="description" content="{{ site.description }}" /> {% endif %}
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    {% include open-graph.html %}
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> {% include open-graph.html %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="shortcut icon" href="{{ "/assets/images/favicon.png" | prepend: site.baseurl }}">
+    <link rel="shortcut icon" href="{{ " /assets/images/favicon.png " | prepend: site.baseurl }}">
     <!--  <link rel="stylesheet" href="{{asset "js/styles/obsidian.css"}}"> -->
     <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ "/css/main.css"  | prepend: site.baseurl  }}" />
-    <link rel="stylesheet" type="text/css" media="print" href="{{ "/css/print.css"  | prepend: site.baseurl  }}" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ " /css/main.css "  | prepend: site.baseurl  }}" />
+    <link rel="stylesheet" type="text/css" media="print" href="{{ " /css/print.css "  | prepend: site.baseurl  }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml
+        " | prepend: site.baseurl }}" />
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="{{ "/assets/js/socialite.min.js" | prepend: site.baseurl  }}"></script>
-    <script type="text/javascript" src="{{ "/assets/js/jquery.fitvids.js" | prepend: site.baseurl  }}"></script>
-    <script type="text/javascript" src="{{ "/assets/js/index.js" | prepend: site.baseurl  }}"></script>
+    <script type="text/javascript" src="{{ " /assets/js/socialite.min.js " | prepend: site.baseurl  }}"></script>
+    <script type="text/javascript" src="{{ " /assets/js/jquery.fitvids.js " | prepend: site.baseurl  }}"></script>
+    <script type="text/javascript" src="{{ " /assets/js/index.js " | prepend: site.baseurl  }}"></script>
     <meta name="google-translate-customization" content="76a8b8ed1f21aed-448f5015b03a60e8-g569ba4d2fa1a7866-7"></meta>
-    <script type="text/javascript" src="{{ "/assets/js/filterable.pack.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ " /assets/js/filterable.pack.js " | prepend: site.baseurl }}"></script>
     <style>
         @media (max-width: 400px) {
-            .social { margin: 17px 0 5px; text-align: center; }
-            .social ul { text-align: center; display: inline-block; width: 224px;}
-            .social ul li { width: 53px; display: inline-block; margin: 0 21px 0;}
-                    .home { position: absolute; }
-            .post-title { font-size: 40px !important; }
+            .social {
+                margin: 17px 0 5px;
+                text-align: center;
+            }
+            .social ul {
+                text-align: center;
+                display: inline-block;
+                width: 224px;
+            }
+            .social ul li {
+                width: 53px;
+                display: inline-block;
+                margin: 0 21px 0;
+            }
+            .home {
+                position: absolute;
+            }
+            .post-title {
+                font-size: 40px !important;
+            }
         }
         
+        table {
+            font-size: 23px;
+            margin: 20px 0;
+            width: auto;
+            border-collapse: collapse;
+        }
         
-table
-{
-    font-size: 23px;
-    margin: 20px 0;
-    width: auto;
-    border-collapse: collapse;
-}
-table th
-{
-	padding: 12px 15px;
-    color: #555;
-    text-align: left;
-}
-table td
-{
-	padding: 10px 15px;
-	color: rgb(127, 82, 130);
-	border-top: 1px solid #e8edff;
-}
-
-table tr:hover td
-{
-	color: #813a6a;
-	background: rgba(129, 58, 106, 0.08);
-}
-
-
+        table th {
+            padding: 12px 15px;
+            color: #555;
+            text-align: left;
+        }
         
+        table td {
+            padding: 10px 15px;
+            color: rgb(127, 82, 130);
+            border-top: 1px solid #e8edff;
+        }
         
+        table tr:hover td {
+            color: #813a6a;
+            background: rgba(129, 58, 106, 0.08);
+        }
         /* Content - Portfolio Listing */
-        ul#portfolio-filter{ margin: -20px 0; padding: 0; height: 64px; line-height: 64px}
-        ul#portfolio-filter li{ display: inline;  margin-left: 0}
-        ul#portfolio-filter a{ margin-right: 0.5em; padding: 7px 10px; background: #FFF; color: #AAA; font-weight: bold; text-decoration: none; }
-        ul#portfolio-filter a:hover, ul#portfolio-filter a.current{ color: #888; }
-        ul#portfolio-filter a.current{ background-color: #DDD; }
-        ul#portfolio-list{ margin: 0; padding: 0; list-style: none; }
-        ul#portfolio-list h2{ text-align: center; }
-        ul#portfolio-list li{ width: 255px; height: 330px; display: block; float: left; margin-right: 45px; overflow: hidden;  margin-left: 0; margin-bottom: 30px;}
-        ul#portfolio-list li a{ display: block; overflow: hidden; border: 1px solid #CDCDCD; background: #eee; }
-        ul#portfolio-list li p{ text-align: center; font-size: 18px; line-height: 21px; color: #333; margin: 5px 0 13px; padding: 0;}
-        ul#portfolio-list img { opacity: .7; }
-        ul#portfolio-list img:hover { opacity: 1; }
-        .boundingBox ul { display: inline-block;}
-        pre, code { background-color: #333 !important; color: #eee; }
-        pre {    padding: 16px 21px;    overflow: auto;    margin: 0;}
-        .post .post-content, .post .post-content p code { color: #eee; }
-        .post .post-content h3, .post .post-content h4, .post .post-content h5, .post .post-content h6 { color: #333; }
-        .post .post-content p { padding-bottom: 19px; }
-        .post .post-content h2 { color: #333;}
-        .post .post-content ul, .post .post-content ol { color: #666665;}
-        .post .post-content h1, .post .post-content h2, .post .post-content h3, .post .post-content h4, .post .post-content h5, .post .post-content h6 { color: #333; }
-        a { color: rgb(165, 64, 133) }
-        .highlight .s1, .highlight .s2, .highlight .kd {    color: #FF98B1; }
-        .highlight .nx {    color: #FFC6FE; }
-        .highlight .nt {    color: #A5A5FF;}
-        .highlight .s {    color: #FF638A;}
-        .highlight .na {    color: #00A9A9; }
-        .ads {        max-width: 864px;
-    background: #eee;
-    padding: 10px;
-    margin: 0 auto 45px;}
-        .ads .sponsor {     float: right;    margin-right: -10px;    color: #333;    margin-top: -29px;    background: #eee;    padding: 3px 5px;    font-size: 13px;    font-family: arial;}
+        
+        ul#portfolio-filter {
+            margin: -20px 0;
+            padding: 0;
+            height: 64px;
+            line-height: 64px
+        }
+        
+        ul#portfolio-filter li {
+            display: inline;
+            margin-left: 0
+        }
+        
+        ul#portfolio-filter a {
+            margin-right: 0.5em;
+            padding: 7px 10px;
+            background: #FFF;
+            color: #AAA;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        ul#portfolio-filter a:hover,
+        ul#portfolio-filter a.current {
+            color: #888;
+        }
+        
+        ul#portfolio-filter a.current {
+            background-color: #DDD;
+        }
+        
+        ul#portfolio-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        ul#portfolio-list h2 {
+            text-align: center;
+        }
+        
+        ul#portfolio-list li {
+            width: 255px;
+            height: 330px;
+            display: block;
+            float: left;
+            margin-right: 45px;
+            overflow: hidden;
+            margin-left: 0;
+            margin-bottom: 30px;
+        }
+        
+        ul#portfolio-list li a {
+            display: block;
+            overflow: hidden;
+            border: 1px solid #CDCDCD;
+            background: #eee;
+        }
+        
+        ul#portfolio-list li p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 21px;
+            color: #333;
+            margin: 5px 0 13px;
+            padding: 0;
+        }
+        
+        ul#portfolio-list img {
+            opacity: .7;
+        }
+        
+        ul#portfolio-list img:hover {
+            opacity: 1;
+        }
+        
+        .boundingBox ul {
+            display: inline-block;
+        }
+        
+        pre,
+        code {
+            background-color: #333 !important;
+            color: #eee;
+        }
+        
+        pre {
+            padding: 16px 21px;
+            overflow: auto;
+            margin: 0;
+        }
+        
+        .post .post-content,
+        .post .post-content p code {
+            color: #eee;
+        }
+        
+        .post .post-content h3,
+        .post .post-content h4,
+        .post .post-content h5,
+        .post .post-content h6 {
+            color: #333;
+        }
+        
+        .post .post-content p {
+            padding-bottom: 19px;
+        }
+        
+        .post .post-content h2 {
+            color: #333;
+        }
+        
+        .post .post-content ul,
+        .post .post-content ol {
+            color: #666665;
+        }
+        
+        .post .post-content h1,
+        .post .post-content h2,
+        .post .post-content h3,
+        .post .post-content h4,
+        .post .post-content h5,
+        .post .post-content h6 {
+            color: #333;
+        }
+        
+        a {
+            color: rgb(165, 64, 133)
+        }
+        
+        .highlight .s1,
+        .highlight .s2,
+        .highlight .kd {
+            color: #FF98B1;
+        }
+        
+        .highlight .nx {
+            color: #FFC6FE;
+        }
+        
+        .highlight .nt {
+            color: #A5A5FF;
+        }
+        
+        .highlight .s {
+            color: #FF638A;
+        }
+        
+        .highlight .na {
+            color: #00A9A9;
+        }
+        
+        .ads {
+            max-width: 864px;
+            background: #eee;
+            padding: 10px;
+            margin: 0 auto 45px;
+        }
+        
+        .ads .sponsor {
+            float: right;
+            margin-right: -10px;
+            color: #333;
+            margin-top: -29px;
+            background: #eee;
+            padding: 3px 5px;
+            font-size: 13px;
+            font-family: arial;
+        }
     </style>
 </head>
